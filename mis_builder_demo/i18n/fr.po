@@ -79,7 +79,7 @@ msgstr ""
 #. module: mis_builder_demo
 #: model:mis.report.kpi,description:mis_builder_demo.mis_report_expenses_kpi_exp
 msgid "Expenses"
-msgstr ""
+msgstr "Dépense"
 
 #. module: mis_builder_demo
 #: model:ir.model.fields,field_description:mis_builder_demo.field_mis_committed_purchase_id
