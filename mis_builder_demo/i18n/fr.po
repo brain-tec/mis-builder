@@ -44,7 +44,7 @@ msgstr "Société"
 #. module: mis_builder_demo
 #: model:ir.model.fields,field_description:mis_builder_demo.field_mis_committed_purchase_credit
 msgid "Credit"
-msgstr ""
+msgstr "Crédit"
 
 #. module: mis_builder_demo
 #: model:ir.model.fields,field_description:mis_builder_demo.field_mis_committed_purchase_date
@@ -54,7 +54,7 @@ msgstr ""
 #. module: mis_builder_demo
 #: model:ir.model.fields,field_description:mis_builder_demo.field_mis_committed_purchase_debit
 msgid "Debit"
-msgstr ""
+msgstr "Débit"
 
 #. module: mis_builder_demo
 #: model:mis.report,name:mis_builder_demo.mis_report_expenses
