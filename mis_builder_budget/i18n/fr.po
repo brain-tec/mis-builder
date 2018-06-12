@@ -6,10 +6,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2018-06-11 15:24+0000\n"
+"PO-Revision-Date: 2018-06-12 16:58+0000\n"
 "Last-Translator: Weblate Admin <weblate@odoo-community.org>\n"
-"Language-Team: French <https://example.com/projects/mis-builder-10-0/mis-"
-"builder-10-0-mis_builder_budget/fr/>\n"
+"Language-Team: French <https://example.com/projects/mis-builder-10-0/"
+"mis-builder-10-0-mis_builder_budget/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -75,7 +75,7 @@ msgstr ""
 #. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_company_id
 msgid "Company"
-msgstr ""
+msgstr "Société"
 
 #. module: mis_builder_budget
 #: model:ir.ui.view,arch_db:mis_builder_budget.mis_budget_form_view
