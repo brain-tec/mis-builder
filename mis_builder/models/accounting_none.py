@@ -90,6 +90,12 @@ True
 True
 >>> AccountingNone <= AccountingNone
 True
+>>> round(AccountingNone, 2)
+0.0
+>>> float(AccountingNone)
+0.0
+>>> int(AccountingNone)
+0
 """
 
 __all__ = ['AccountingNone']
@@ -190,6 +196,15 @@ class AccountingNoneType(object):
 
     def __ge__(self, other):
         return other <= 0
+
+    def __float__(self):
+        return 0.0
+
+    def __int__(self):
+        return 0
+
+    def __round__(self, ndigits):
+        return 0.0
 
 
 AccountingNone = AccountingNoneType()
