@@ -42,6 +42,15 @@ Here are some presentations:
 
 
 [//]: # (addons)
+
+Unported addons
+---------------
+addon | version | summary
+--- | --- | ---
+[mis_builder](mis_builder/) | 11.0.3.2.2 (unported) | Build 'Management Information System' Reports and Dashboards
+[mis_builder_budget](mis_builder_budget/) | 11.0.3.2.1 (unported) | Create budgets for MIS reports
+[mis_builder_demo](mis_builder_demo/) | 11.0.3.0.1 (unported) | Demo addon for MIS Builder
+
 [//]: # (end addons)
 
 Translation Status
