@@ -424,6 +424,9 @@ class MisReportInstance(models.Model):
     no_auto_expand_accounts = fields.Boolean(
         string='Disable account details expansion',
     )
+    display_columns_description = fields.Boolean(
+        help="Display the date range details in the column headers.",
+    )
     comparison_mode = fields.Boolean(
         compute="_compute_comparison_mode",
         inverse="_inverse_comparison_mode")
@@ -673,6 +676,8 @@ class MisReportInstance(models.Model):
             description = None
             if period.mode == MODE_NONE:
                 pass
+            elif not self.display_columns_description:
+                pass
             elif period.date_from == period.date_to and period.date_from:
                 description = self._format_date(period.date_from)
             elif period.date_from and period.date_to:
@@ -720,6 +725,7 @@ class MisReportInstance(models.Model):
                 'view_type': 'list',
                 'view_mode': 'list',
                 'target': 'current',
+                'context': {'active_test': False},
             }
         else:
             return False
