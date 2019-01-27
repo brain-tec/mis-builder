@@ -1,7 +1,11 @@
-11.0.3.3.0 (2019-01-13)
+11.0.3.3.0 (2019-01-26)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 **Features**
+
+*Dynamic analytic filters in report preview are not yet available in 11,
+this requires an update to the JS widget that proved difficult to implement
+so far. Help welcome.*
 
 - Analytic account filters. On a report, an analytic
   account can be selected for filtering. The filter will
@@ -27,6 +31,16 @@
 - Add evaluate method to mis.report. This is a simplified
   method to evaluate kpis of a report over a time period,
   without creating a mis.report.instance. (`#123 <https://github.com/oca/mis-builder/issues/123>`_)
+
+**Bugs**
+
+- In the style form, hide the "Hide always" checkbox when "Hide always inherit"
+  is checked, as for all other syle elements. (`#121 <https://github.com/OCA/mis-builder/pull/121>`)
+
+**Upgrading from 3.2 (breaking changes)**
+
+If you use ``Actuals (alternative)`` data source in combination with analytic
+filters, the underlying model must now have an ``analytic_account_id`` field.
 
 
 11.0.3.2.2 (2018-06-30)
