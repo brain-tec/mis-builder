@@ -5,9 +5,10 @@ import odoo.tests.common as common
 from odoo.tools import test_reports
 
 from ..models.mis_report import TYPE_STR
+from ..models.accounting_none import AccountingNone
 
 
-class TestMisReportInstance(common.TransactionCase):
+class TestMisReportInstance(common.HttpCase):
     """ Basic integration test to exercise mis.report.instance.
 
     We don't check the actual results here too much as computation correctness
@@ -19,9 +20,9 @@ class TestMisReportInstance(common.TransactionCase):
         partner_model_id = \
             self.env.ref('base.model_res_partner').id
         partner_create_date_field_id = \
-            self.env.ref('base.field_res_partner_create_date').id
+            self.env.ref('base.field_res_partner__create_date').id
         partner_debit_field_id = \
-            self.env.ref('account.field_res_partner_debit').id
+            self.env.ref('account.field_res_partner__debit').id
         # create a report with 2 subkpis and one query
         self.report = self.env['mis.report'].create(dict(
             name='test report',
@@ -121,6 +122,20 @@ class TestMisReportInstance(common.TransactionCase):
                 subkpi_id=self.report.subkpi_ids[1].id,
             ))],
         ))
+        # kpi that references another subkpi by name
+        self.env['mis.report.kpi'].create(dict(
+            report_id=self.report.id,
+            description='kpi 7',
+            name='k7',
+            multi=True,
+            expression_ids=[(0, 0, dict(
+                name='k3.sk1',
+                subkpi_id=self.report.subkpi_ids[0].id,
+            )), (0, 0, dict(
+                name='k3.sk2',
+                subkpi_id=self.report.subkpi_ids[1].id,
+            ))],
+        ))
         # create a report instance
         self.report_instance = self.env['mis.report.instance'].create(dict(
             name='test instance',
@@ -141,6 +156,32 @@ class TestMisReportInstance(common.TransactionCase):
         self.report_instance.period_ids[1].comparison_column_ids = \
             [(4, self.report_instance.period_ids[0].id, None)]
 
+    def test_compute(self):
+        matrix = self.report_instance._compute_matrix()
+        for row in matrix.iter_rows():
+            vals = [c.val for c in row.iter_cells()]
+            if row.kpi.name == 'k3':
+                # k3 is constant
+                self.assertEquals(vals, [AccountingNone, AccountingNone, 1.0])
+            elif row.kpi.name == 'k6':
+                # k6 is a string kpi
+                self.assertEquals(vals, ["bla", "bla", "blabla"])
+            elif row.kpi.name == 'k7':
+                # k7 references k3 via subkpi names
+                self.assertEquals(vals, [AccountingNone, AccountingNone, 1.0])
+
+    def test_evaluate(self):
+        company = self.env.ref('base.main_company')
+        aep = self.report._prepare_aep(company)
+        r = self.report.evaluate(
+            aep,
+            date_from='2014-01-01',
+            date_to='2014-12-31',
+        )
+        self.assertEqual(r['k3'], (AccountingNone, 1.0))
+        self.assertEqual(r['k6'], ("bla", "blabla"))
+        self.assertEqual(r['k7'], (AccountingNone, 1.0))
+
     def test_json(self):
         self.report_instance.compute()
 
@@ -156,12 +197,14 @@ class TestMisReportInstance(common.TransactionCase):
         self.assertEqual(action['res_model'], 'account.move.line')
 
     def test_qweb(self):
+        self.report_instance.print_pdf()  # get action
         test_reports.try_report(self.env.cr, self.env.uid,
                                 'mis_builder.report_mis_report_instance',
                                 [self.report_instance.id],
                                 report_type='qweb-pdf')
 
     def test_xlsx(self):
+        self.report_instance.export_xls()  # get action
         test_reports.try_report(self.env.cr, self.env.uid,
                                 'mis_builder.mis_report_instance_xlsx',
                                 [self.report_instance.id],
@@ -236,3 +279,23 @@ class TestMisReportInstance(common.TransactionCase):
             self.report_instance.company_id)
         self.report_instance._onchange_company()
         self.assertFalse(self.report_instance.company_ids)
+
+    def test_mis_report_analytic_filters(self):
+        # Check that matrix has no values when using a filter with a non
+        # existing account
+        matrix = self.report_instance.with_context(
+            mis_report_filters={
+                'analytic_account_id': {
+                    'value': 999,
+                },
+            }
+        )._compute_matrix()
+        for row in matrix.iter_rows():
+            vals = [c.val for c in row.iter_cells()]
+            if row.kpi.name == 'k1':
+                self.assertEquals(
+                    vals, [AccountingNone, AccountingNone, AccountingNone])
+            elif row.kpi.name == 'k2':
+                self.assertEquals(vals, [AccountingNone, AccountingNone, None])
+            elif row.kpi.name == 'k4':
+                self.assertEquals(vals, [AccountingNone, AccountingNone, 1.0])

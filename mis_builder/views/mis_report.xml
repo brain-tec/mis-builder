@@ -118,13 +118,13 @@
                                      </p>
                                      <ul>
                                          <li><b>bal, crd, deb, pbal, nbal</b>: balance, debit, credit, positive balance, negative balance.</li>
-                                         <li><b>p, i, e</b>: respectivelyl variation over the period, initial balance, ending balance</li>
+                                         <li><b>p, i, e</b>: respectively variation over the period, initial balance, ending balance</li>
                                          <li>The <b>account selector</b> is a like expression on the account code (eg 70%, etc).</li>
                                          <li>The <b>journal items domain</b> is an Odoo domain filter on journal items.</li>
                                          <li><b>balu[]</b>: (u for unallocated) is a special expression that shows the unallocated profit/loss of previous
                                            fiscal years.</li>
                                      </ul>
-                                     <p>Expression can also involve other KPI and query results by name (eg kpi1 + kpi2).</p>
+                                     <p>Expressions can involve other KPI, sub KPI and query results by name (eg kpi1 + kpi2, kpi2.subkpi1, query1.field1).</p>
                                      <p>Additionally following variables are available in the evaluation context:</p>
                                      <ul>
                                          <li><b>sum, min, max, len, avg</b>: behave as expected, very similar to the python builtins.</li>

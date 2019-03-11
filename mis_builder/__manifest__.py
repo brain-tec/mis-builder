@@ -3,7 +3,7 @@
 
 {
     'name': 'MIS Builder',
-    'version': '11.0.3.2.2',
+    'version': '12.0.3.3.0',
     'category': 'Reporting',
     'summary': """
         Build 'Management Information System' Reports and Dashboards
@@ -15,7 +15,7 @@
         'account',
         'board',
         'report_xlsx',  # OCA/reporting-engine
-        'date_range',  # OCA/server-tools
+        'date_range',  # OCA/server-ux
         'web_widget_color',  # OCA/web
     ],
     'data': [
