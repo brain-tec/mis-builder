@@ -54,9 +54,9 @@ class MisBuilderXlsx(models.AbstractModel):
         if not objects.hide_analytic_filters:
             for filter_description in \
                     objects.get_filter_descriptions_from_context():
-                sheet.write(row_pos, 0, filter_description, bold)
+                sheet.write(row_pos, 0, filter_description)
                 row_pos += 1
-            row_pos += 2
+            row_pos += 1
 
         # column headers
         sheet.write(row_pos, 0, '', header_format)
@@ -117,7 +117,7 @@ class MisBuilderXlsx(models.AbstractModel):
                     sheet.write(row_pos, col_pos, '', row_format)
                     continue
                 cell_xlsx_style = style_obj.to_xlsx_style(
-                    row.kpi.type, cell.style_props, no_indent=True)
+                    cell.val_type, cell.style_props, no_indent=True)
                 cell_xlsx_style['align'] = 'right'
                 cell_format = workbook.add_format(cell_xlsx_style)
                 if isinstance(cell.val, DataError):
