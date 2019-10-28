@@ -5,7 +5,7 @@
 
 # MIS Builder
 
-Management Information System reports for Odoo: easily build super fast, 
+Management Information System reports for Odoo: easily build super fast,
 beautiful, custom reports such as P&L, Balance Sheets and more.
 
 **This is the 9.0 branch. Please note the development of new features occurs mainly on
@@ -47,9 +47,9 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
-[mis_builder](mis_builder/) | 9.0.3.4.0 | Build 'Management Information System' Reports and Dashboards
-[mis_builder_budget](mis_builder_budget/) | 9.0.3.3.0 | Create budgets for MIS reports
-[mis_builder_demo](mis_builder_demo/) | 9.0.3.0.0 | Demo addon for MIS Builder
+[mis_builder](mis_builder/) | 9.0.3.5.0 | Build 'Management Information System' Reports and Dashboards
+[mis_builder_budget](mis_builder_budget/) | 9.0.3.4.0 | Create budgets for MIS reports
+[mis_builder_demo](mis_builder_demo/) | 9.0.3.1.0 | Demo addon for MIS Builder
 
 [//]: # (end addons)
 
