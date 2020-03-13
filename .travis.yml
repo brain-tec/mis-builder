@@ -35,11 +35,11 @@ jobs:
 
 env:
   global:
-    - VERSION="10.0" TESTS="0" LINT_CHECK="0" MAKEPOT="0"
+    - VERSION="10.0" TESTS="0" LINT_CHECK="0" MAKEPOT="0" MQT_DEP="PIP"
 
 install:
-  - git clone --depth=1 https://github.com/OCA/maintainer-quality-tools.git
-    ${HOME}/maintainer-quality-tools
+  - git clone --depth=1 https://github.com/acsone/maintainer-quality-tools.git --branch
+    mqt-pip-install-2020 ${HOME}/maintainer-quality-tools
   - export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
   - export WKHTMLTOPDF_VERSION=0.12.5
   - travis_install_nightly
