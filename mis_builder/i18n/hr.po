@@ -749,7 +749,7 @@ msgid "From (computed)"
 msgstr ""
 
 #. module: mis_builder
-#: code:addons/mis_builder/report/mis_report_instance_xlsx.py:167
+#: code:addons/mis_builder/report/mis_report_instance_xlsx.py:171
 #, python-format
 msgid "Generated on {} at {}"
 msgstr ""
@@ -1591,7 +1591,7 @@ msgid "Unexpected accumulation method %s for %s."
 msgstr ""
 
 #. module: mis_builder
-#: code:addons/mis_builder/models/prorata_read_group_mixin.py:32
+#: code:addons/mis_builder/models/prorata_read_group_mixin.py:33
 #, python-format
 msgid "Unsupported operator %s for searching on date"
 msgstr ""
