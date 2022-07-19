@@ -3,13 +3,13 @@
 
 {
     "name": "MIS Builder",
-    "version": "11.0.3.6.6",
+    "version": "11.0.3.6.7",
     "category": "Reporting",
     "summary": """
         Build 'Management Information System' Reports and Dashboards
     """,
     "author": "ACSONE SA/NV, " "Odoo Community Association (OCA)",
-    "website": "https://github.com/OCA/mis-builder/",
+    "website": "https://github.com/OCA/mis-builder",
     "depends": [
         "account",
         "board",
