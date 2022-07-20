@@ -1,3 +1,19 @@
+11.0.3.6.9 (2022-07-19)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+**Bugfixes**
+
+- Support users without timezone. (`#388 <https://github.com/OCA/mis-builder/issues/388>`_)
+
+
+11.0.3.6.8 (2022-07-19)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+**Bugfixes**
+
+- Allow deleting a report that has subreports. (`#431 <https://github.com/OCA/mis-builder/issues/431>`_)
+
+
 11.0.3.6.5 (2021-04-23)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
