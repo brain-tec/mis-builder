@@ -35,6 +35,7 @@ It features the following key characteristics:
 
 Here are some presentations:
 
+- OCA Days 2020 ([video](https://www.youtube.com/watch?v=45FXd8XM5m8))
 - Odoo Experience 2017 ([slides](https://www.slideshare.net/acsone/budget-control-with-misbuilder-3-2017), [video](https://youtu.be/0PpxGAf2l-0))
 - Odoo Experience 2016 ([slides](https://www.slideshare.net/acsone/misbuilder-2016))
 - Odoo Experience 2015 ([slides](https://www.slideshare.net/acsone/misbuilder))
@@ -50,7 +51,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [mis_builder](mis_builder/) | 17.0.1.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Build 'Management Information System' Reports and Dashboards
-[mis_builder_budget](mis_builder_budget/) | 17.0.1.1.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Create budgets for MIS reports
+[mis_builder_budget](mis_builder_budget/) | 17.0.1.2.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Create budgets for MIS reports
 [mis_builder_demo](mis_builder_demo/) | 17.0.1.0.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Demo addon for MIS Builder
 
 [//]: # (end addons)
