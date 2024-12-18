@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-12-14 11:06+0000\n"
+"PO-Revision-Date: 2024-12-17 11:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -1593,6 +1593,11 @@ msgid "Style name"
 msgstr "Nome stile"
 
 #. module: mis_builder
+#: model:ir.model.constraint,message:mis_builder.constraint_mis_report_style_style_name_uniq
+msgid "Style name should be unique"
+msgstr ""
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__subkpi_ids
 msgid "Sub KPI"
 msgstr "Sotto KPI"
@@ -1935,7 +1940,7 @@ msgid ""
 "quantity</code>"
 msgstr ""
 "quando viene utilizzato <code>fld</code>: deve essere fornito \n"
-"                                        uno specificatore del nome del campo "
+"                                        uno descrittore del nome del campo "
 "(ad esempio <code>fldp.quantity</code>"
 
 #. module: mis_builder
