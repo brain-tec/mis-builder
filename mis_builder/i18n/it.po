@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-01-27 12:06+0000\n"
+"PO-Revision-Date: 2025-05-24 15:25+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance_annotation__annotation_context
@@ -23,6 +23,9 @@ msgid ""
 "        Context used when adding annotation\n"
 "        "
 msgstr ""
+"\n"
+"        Context utilizzato quando si aggiungono note\n"
+"        "
 
 #. module: mis_builder
 #. odoo-python
@@ -404,12 +407,12 @@ msgstr "Dominio analitico"
 #: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
 #, python-format
 msgid "Annotate"
-msgstr ""
+msgstr "Annota"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__annotation_context
 msgid "Annotation Context"
-msgstr ""
+msgstr "Context note"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -988,7 +991,7 @@ msgstr "Livello di rientro deve essere maggiore o uguale a 0"
 #: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
 #, python-format
 msgid "Insert note here"
-msgstr ""
+msgstr "Inserire qui la nota"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_style__italic
@@ -1223,12 +1226,12 @@ msgstr "Modelli MIS Report"
 #. module: mis_builder
 #: model:res.groups,name:mis_builder.group_edit_annotation
 msgid "MIS Report: add annotations"
-msgstr ""
+msgstr "MIS Report: aggiungi note"
 
 #. module: mis_builder
 #: model:res.groups,name:mis_builder.group_read_annotation
 msgid "MIS Report: view annotations"
-msgstr ""
+msgstr "MIS Repost: vedi note"
 
 #. module: mis_builder
 #: model:ir.ui.menu,name:mis_builder.mis_report_conf_menu
@@ -1271,7 +1274,7 @@ msgstr "Minimo"
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_mis_report_instance_annotation
 msgid "Mis Report Instance Annotation"
-msgstr ""
+msgstr "Annotazione istanza MIS Report"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__mode
@@ -1362,7 +1365,7 @@ msgstr "Normale"
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__note
 msgid "Note"
-msgstr ""
+msgstr "Nota"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_style_view_form
@@ -1395,7 +1398,7 @@ msgstr "Offset dal periodo attuale"
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__wide_display_by_default
 msgid "Open report in wide mode by default"
-msgstr ""
+msgstr "Aprire il resoconto in modalità vista in modo predefinito"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum__period_id
@@ -1414,7 +1417,7 @@ msgstr "Percentuale"
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__period_id
 msgid "Period"
-msgstr ""
+msgstr "Periodo"
 
 #. module: mis_builder
 #: model:ir.model.constraint,message:mis_builder.constraint_mis_report_instance_period_name_unique
@@ -1510,7 +1513,7 @@ msgstr "Relativo alla data base del resoconto"
 #: code:addons/mis_builder/static/src/components/mis_report_widget.esm.js:0
 #, python-format
 msgid "Remove"
-msgstr ""
+msgstr "Rimuovi"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__report_id
@@ -1887,12 +1890,12 @@ msgstr "Operatore non supportato %s per la ricerca in data"
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__user_can_edit_annotation
 msgid "User Can Edit Annotation"
-msgstr ""
+msgstr "Annotazione modifica CAN utente"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__user_can_read_annotation
 msgid "User Can Read Annotation"
-msgstr ""
+msgstr "Annotazione lettura CAN utente"
 
 #. module: mis_builder
 #: model:ir.actions.server,name:mis_builder.ir_cron_vacuum_temp_reports_ir_actions_server
@@ -1963,7 +1966,7 @@ msgstr "Non puoi sommare il periodo %s con se stesso."
 #: code:addons/mis_builder/models/mis_report_instance_annotation.py:0
 #, python-format
 msgid "You do not have the rights to edit annotations"
-msgstr ""
+msgstr "Non si è autorizzati a modificare le note"
 
 #. module: mis_builder
 #. odoo-python
