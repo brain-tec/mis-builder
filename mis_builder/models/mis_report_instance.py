@@ -592,6 +592,10 @@ class MisReportInstance(models.Model):
         help="Search view to customize the filter box in the report widget.",
     )
 
+    wide_display_by_default = fields.Boolean(
+        string="Open report in wide mode by default",
+    )
+
     @api.depends("report_id.move_lines_source")
     def _compute_widget_search_view_id(self):
         for rec in self:
