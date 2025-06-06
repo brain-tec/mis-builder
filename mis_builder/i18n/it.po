@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-07-30 08:58+0000\n"
+"PO-Revision-Date: 2025-06-05 10:26+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: mis_builder
 #. odoo-python
@@ -979,7 +979,7 @@ msgstr "Sequenza KPI"
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
 msgid "KPI name (%s) must be a valid python identifier"
-msgstr ""
+msgstr "Il nome del KPI (%s) deve essere un identificatore Python valido"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__kpi_ids
@@ -1277,7 +1277,7 @@ msgstr "Offset dal periodo attuale"
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__wide_display_by_default
 msgid "Open report in wide mode by default"
-msgstr ""
+msgstr "Aprire il resoconto in modalità vista in modo predefinito"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum__period_id
@@ -1361,7 +1361,7 @@ msgstr "Domande"
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
 msgid "Query name (%s) must be valid python identifier"
-msgstr ""
+msgstr "Il nome della query (%s) deve essere un identificatore Python valido"
 
 #. module: mis_builder
 #. odoo-javascript
@@ -1564,7 +1564,7 @@ msgstr "Sequenza sotto-KPI"
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
 msgid "Sub-KPI name (%s) must be a valid python identifier"
-msgstr ""
+msgstr "Il nome del sotto-KPI (%s) deve essere un identificatore Python valido"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi_expression__subkpi_id
@@ -1587,6 +1587,7 @@ msgstr "Rilevato loop di sottoreport"
 #: code:addons/mis_builder/models/mis_report_subreport.py:0
 msgid "Subreport name (%s) must be a valid python identifier"
 msgstr ""
+"Il nome del sottoreport (%s) deve essere un identificatore Python valido"
 
 #. module: mis_builder
 #: model:ir.model.constraint,message:mis_builder.constraint_mis_report_subreport_name_unique
@@ -1621,6 +1622,8 @@ msgid ""
 "Sum cannot be computed in column %s because the columns to sum have no "
 "common subkpis"
 msgstr ""
+"La somma non può essere calcolata nella colonna %s perché le colonne da "
+"sommare non hanno sotto-KPI in comune"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__source__sumcol
