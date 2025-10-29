@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-10-15 10:43+0000\n"
+"PO-Revision-Date: 2025-10-28 10:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -23,6 +23,9 @@ msgid ""
 "        Context used when adding annotation\n"
 "        "
 msgstr ""
+"\n"
+"        Context utilizzato quando si aggiungono note\n"
+"        "
 
 #. module: mis_builder
 #. odoo-python
@@ -109,6 +112,10 @@ msgid ""
 "                                        positive balance, negative balance,\n"
 "                                        other numerical field."
 msgstr ""
+"<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>pbal</code>, "
+"<code>nbal</code>, <code>fld</code> : saldo, debito, credito,\n"
+"                                        saldo positivo, saldo negativo,\n"
+"                                        altro campo numerico."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -395,12 +402,12 @@ msgstr "Dominio analitico"
 #: code:addons/mis_builder/static/src/components/mis_report_widget.esm.js:0
 #: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
 msgid "Annotate"
-msgstr ""
+msgstr "Annota"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__annotation_context
 msgid "Annotation Context"
-msgstr ""
+msgstr "Context note"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -530,7 +537,7 @@ msgstr "Modalità di confronto"
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/annotation_dialog/annotation_dialog.xml:0
 msgid "Confirm"
-msgstr ""
+msgstr "Conferma"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__create_uid
@@ -968,7 +975,7 @@ msgstr "Livello di rientro deve essere maggiore o uguale a 0"
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/annotation_dialog/annotation_dialog.xml:0
 msgid "Insert note here"
-msgstr ""
+msgstr "Inserire qui la nota"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_style__italic
@@ -1184,12 +1191,12 @@ msgstr "Modelli MIS Report"
 #. module: mis_builder
 #: model:res.groups,name:mis_builder.group_edit_annotation
 msgid "MIS Report: add annotations"
-msgstr ""
+msgstr "MIS Report: aggiungi note"
 
 #. module: mis_builder
 #: model:res.groups,name:mis_builder.group_read_annotation
 msgid "MIS Report: view annotations"
-msgstr ""
+msgstr "MIS Repost: vedi note"
 
 #. module: mis_builder
 #: model:ir.ui.menu,name:mis_builder.mis_report_conf_menu
@@ -1226,7 +1233,7 @@ msgstr "Minimo"
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_mis_report_instance_annotation
 msgid "Mis Report Instance Annotation"
-msgstr ""
+msgstr "Annotazione istanza MIS Report"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__mode
@@ -1310,7 +1317,7 @@ msgstr "Normale"
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__note
 msgid "Note"
-msgstr ""
+msgstr "Nota"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_style_view_form
@@ -1356,7 +1363,7 @@ msgstr "Percentuale"
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__period_id
 msgid "Period"
-msgstr ""
+msgstr "Periodo"
 
 #. module: mis_builder
 #: model:ir.model.constraint,message:mis_builder.constraint_mis_report_instance_period_name_unique
@@ -1446,7 +1453,7 @@ msgstr "Relativo alla data base del resoconto"
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/annotation_dialog/annotation_dialog.xml:0
 msgid "Remove"
-msgstr ""
+msgstr "Rimuovi"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__report_id
@@ -1602,7 +1609,7 @@ msgstr "Nome stile"
 #. module: mis_builder
 #: model:ir.model.constraint,message:mis_builder.constraint_mis_report_style_style_name_uniq
 msgid "Style name should be unique"
-msgstr ""
+msgstr "Il nome stile deve essere univoco"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__subkpi_ids
@@ -1768,6 +1775,11 @@ msgid ""
 "crd|deb|pbal|nbal|fld}{pieu}(.fieldname)[account\n"
 "                                    selector][journal items domain]</code>."
 msgstr ""
+"I seguenti elementi speciali sono riconosciuti nelle espressioni\n"
+"                                    per calcolare i dati contabili: "
+"<code>{bal|crd|deb|pbal|nbal|fld}{pieu}(.fieldname)\n"
+"                                    [account selector][journal items domain]"
+"</code>."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_kpi_data__date_to
@@ -1802,12 +1814,12 @@ msgstr "Operatore non supportato %s per la ricerca in data"
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__user_can_edit_annotation
 msgid "User Can Edit Annotation"
-msgstr ""
+msgstr "Annotazione modifica CAN utente"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__user_can_read_annotation
 msgid "User Can Read Annotation"
-msgstr ""
+msgstr "Annotazione lettura CAN utente"
 
 #. module: mis_builder
 #: model:ir.actions.server,name:mis_builder.ir_cron_vacuum_temp_reports_ir_actions_server
@@ -1869,25 +1881,27 @@ msgstr "Non puoi sommare il periodo %s con se stesso."
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance_annotation.py:0
 msgid "You do not have the rights to edit annotations"
-msgstr ""
+msgstr "Non si è autorizzati a modificare le note"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/aep.py:0
 msgid "`%(field)s` cannot have a field name in expression %(expr)s"
-msgstr ""
+msgstr "`%(field)s` non può avere un campo name nell'espressione %(expr)s"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/aep.py:0
 msgid "`fld` can only be used with mode `p` (variation) in expression %s"
 msgstr ""
+"`fld` può essere utilizzato solo con la modalità `p` (variazione) "
+"nell'espressione %s"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/aep.py:0
 msgid "`fld` must have a field name in exression %s"
-msgstr ""
+msgstr "`fld` deve avere un campo name nell'espressione %s"
 
 #. module: mis_builder
 #. odoo-python
@@ -1934,6 +1948,9 @@ msgid ""
 "                                        must be provided (e.g. <code>fldp."
 "quantity</code>"
 msgstr ""
+"quando viene utilizzato <code>fld</code>: deve essere fornito \n"
+"                                        uno specificatore del nome del campo "
+"(ad esempio <code>fldp.quantity</code>"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__x-large
