@@ -514,6 +514,11 @@ msgid "Companies for which data will be searched."
 msgstr "Società dalla quali i dati verranno ricercati."
 
 #. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__company_field_id
+msgid "Company Field"
+msgstr ""
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__source_cmpcol_to_id
 msgid "Compare"
 msgstr "Confronto"
@@ -820,6 +825,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__field_names
 msgid "Fetched fields name"
 msgstr "Nomi dei campi forniti"
+
+#. module: mis_builder
+#: model:ir.model.fields,help:mis_builder.field_mis_report_query__company_field_id
+msgid ""
+"Field that defines company on related model.When set, it will be "
+"automatically be added in search domain of query."
+msgstr ""
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__field_ids
@@ -1778,8 +1790,8 @@ msgstr ""
 "I seguenti elementi speciali sono riconosciuti nelle espressioni\n"
 "                                    per calcolare i dati contabili: "
 "<code>{bal|crd|deb|pbal|nbal|fld}{pieu}(.fieldname)\n"
-"                                    [account selector][journal items domain]"
-"</code>."
+"                                    [account selector][journal items "
+"domain]</code>."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_kpi_data__date_to
