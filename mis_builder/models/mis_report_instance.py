@@ -13,6 +13,7 @@ from odoo.exceptions import UserError, ValidationError
 
 from .aep import AccountingExpressionProcessor as AEP
 from .expression_evaluator import ExpressionEvaluator
+from .kpimatrix import KpiMatrix
 
 _logger = logging.getLogger(__name__)
 
@@ -408,7 +409,12 @@ class MisReportInstancePeriod(models.Model):
         Returns an Odoo domain expression (a python list)
         compatible with the model of the query."""
         self.ensure_one()
-        return []
+        domain = []
+        if company_field := query.sudo().company_field_id:
+            query_company_ids = self.report_instance_id.query_company_ids.ids
+            assert query_company_ids
+            domain = [(company_field.name, "in", query_company_ids)]
+        return domain
 
     @api.constrains("mode", "source")
     def _check_mode_source(self):
@@ -461,15 +467,14 @@ class MisReportInstancePeriod(models.Model):
                     )
 
     def copy_data(self, default=None):
-        if self.source == SRC_CMPCOL:
-            # While duplicating a MIS report instance, comparison columns are
-            # ignored because they would raise an error, as they keep the old
-            # `source_cmpcol_from_id` and `source_cmpcol_to_id` from the
-            # original record.
-            return [
-                False,
-            ]
-        return super().copy_data(default=default)
+        # While duplicating a MIS report instance, comparison columns are
+        # ignored because they would raise an error, as they keep the old
+        # `source_cmpcol_from_id` and `source_cmpcol_to_id` from the
+        # original record.
+        filtered_records = self.filtered(lambda x: x.source != SRC_CMPCOL)
+        return super(MisReportInstancePeriod, filtered_records).copy_data(
+            default=default
+        )
 
 
 class MisReportInstance(models.Model):
@@ -592,6 +597,12 @@ class MisReportInstance(models.Model):
         readonly=False,
         string="Filter box search view",
         help="Search view to customize the filter box in the report widget.",
+    )
+    user_can_read_annotation = fields.Boolean(
+        compute="_compute_user_can_read_annotation",
+    )
+    user_can_edit_annotation = fields.Boolean(
+        compute="_compute_user_can_edit_annotation",
     )
 
     wide_display_by_default = fields.Boolean(
@@ -897,7 +908,44 @@ class MisReportInstance(models.Model):
     def compute(self):
         self.ensure_one()
         kpi_matrix = self._compute_matrix()
-        return kpi_matrix.as_dict()
+        ret = kpi_matrix.as_dict()
+
+        ret["notes"] = self.get_notes_by_cell_id()
+        return ret
+
+    def get_notes_by_cell_id(self) -> dict:
+        self.ensure_one()
+        if not self.user_can_read_annotation:
+            return {}
+
+        annotations = self.env["mis.report.instance.annotation"].search(
+            [
+                ("period_id", "in", self.period_ids.ids),
+            ]
+        )
+        annotation_context = self._get_annotation_context()
+        annotations = annotations.filtered(
+            lambda rec: rec.annotation_context == annotation_context
+        )
+
+        annotations_sorted = sorted(
+            annotations,
+            key=lambda r: (
+                r.kpi_id.sequence,
+                r.period_id.sequence,
+                r.subkpi_id.sequence,
+            ),
+        )
+
+        return {
+            KpiMatrix._make_cell_id(
+                annotation.kpi_id.id,
+                False,
+                annotation.period_id.id,
+                annotation.subkpi_id and annotation.subkpi_id.id,
+            ): {"text": annotation.note, "sequence": sequence}
+            for sequence, annotation in enumerate(annotations_sorted, 1)
+        }
 
     @api.model
     def _get_drilldown_views_and_orders(self):
@@ -959,3 +1007,25 @@ class MisReportInstance(models.Model):
             return f"{kpi.description} - {account.display_name} - {period.display_name}"
         else:
             return f"{kpi.description} - {period.display_name}"
+
+    def _get_annotation_context(self):
+        """Return the context used to filter annotation linked to this instance."""
+        self.ensure_one()
+        annotation_context = {}
+        if query_company_ids := self.query_company_ids.ids:
+            # sort ids to make the comparaison easier
+            annotation_context["query_company_ids"] = sorted(query_company_ids)
+
+        return annotation_context
+
+    @api.depends_context("uid")
+    def _compute_user_can_read_annotation(self):
+        self.user_can_read_annotation = self.env.user.has_group(
+            "mis_builder.group_read_annotation"
+        )
+
+    @api.depends_context("uid")
+    def _compute_user_can_edit_annotation(self):
+        self.user_can_edit_annotation = self.env.user.has_group(
+            "mis_builder.group_edit_annotation"
+        )
