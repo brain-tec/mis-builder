@@ -1,4 +1,7 @@
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# MIS Builder
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/mis-builder&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/mis-builder/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/mis-builder/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/mis-builder/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/mis-builder/actions/workflows/test.yml?query=branch%3A16.0)
@@ -6,8 +9,6 @@
 [![Translation Status](https://translation.odoo-community.org/widgets/mis-builder-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/mis-builder-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# MIS Builder
 
 Management Information System reports for Odoo: easily build super fast,
 beautiful, custom reports such as P&L, Balance Sheets and more.
@@ -50,7 +51,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[mis_builder](mis_builder/) | 16.0.5.7.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
+[mis_builder](mis_builder/) | 16.0.5.7.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
 [mis_builder_budget](mis_builder_budget/) | 16.0.5.4.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Create budgets for MIS reports
 [mis_builder_demo](mis_builder_demo/) | 16.0.1.0.3 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Demo addon for MIS Builder
 
