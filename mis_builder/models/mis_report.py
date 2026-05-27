@@ -619,7 +619,7 @@ class MisReport(models.Model):
                         v = data[0][field_name]
                     except KeyError:
                         _logger.error(
-                            "field %s not found in read_group " "for %s; not summable?",
+                            "field %s not found in read_group for %s; not summable?",
                             field_name,
                             model._name,
                         )
