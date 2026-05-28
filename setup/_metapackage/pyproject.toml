@@ -1,13 +1,11 @@
 [project]
 name = "odoo-addons-oca-mis-builder"
-version = "18.0.20250603.1"
+version = "19.0.20260527.0"
 dependencies = [
-    "odoo-addon-mis_builder==18.0.*",
-    "odoo-addon-mis_builder_budget==18.0.*",
-    "odoo-addon-mis_builder_demo==18.0.*",
+    "odoo-addon-mis_builder==19.0.*",
 ]
 classifiers=[
     "Programming Language :: Python",
     "Framework :: Odoo",
-    "Framework :: Odoo :: 18.0",
+    "Framework :: Odoo :: 19.0",
 ]
