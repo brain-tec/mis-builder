@@ -2,6 +2,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended", ":disableDependencyDashboard"],
   "baseBranchPatterns": ["19.0", "18.0", "17.0", "16.0"],
-  "enabledManagers": ["copier"],
-  "ignoreScripts": false
+  "enabledManagers": ["copier"]
 }
