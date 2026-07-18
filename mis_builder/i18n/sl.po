@@ -1,22 +1,20 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * mis_builder
+# 	* mis_builder
 #
-# Translators:
-# Rudolf Schnapka <rs@techno-flex.de>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0\n"
+"Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-05 01:43+0000\n"
-"PO-Revision-Date: 2026-06-08 15:16+0000\n"
-"Last-Translator: smaddlsoft <jm.veddeler@gmail.com>\n"
-"Language-Team: German (https://www.transifex.com/oca/teams/23907/de/)\n"
-"Language: de\n"
+"PO-Revision-Date: 2026-07-15 15:46+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
 "X-Generator: Weblate 5.15.2\n"
 
 #. module: mis_builder
@@ -27,7 +25,7 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        Kontext, der beim Hinzufügen einer Anmerkung verwendet wird\n"
+"        Kontekst, uporabljen pri dodajanju opombe\n"
 "        "
 
 #. module: mis_builder
@@ -35,7 +33,7 @@ msgstr ""
 #: code:addons/mis_builder/models/mis_report.py:0
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 msgid "%s (copy)"
-msgstr "%s (Kopie)"
+msgstr "%s (kopija)"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -43,11 +41,9 @@ msgid ""
 "<code>\n"
 "                                            balp[('user_type_id', '=',\n"
 "                                            ref('account.\n"
-"                                            data_account_type_receivable').id)]"
-"[]\n"
+"                                            data_account_type_receivable').id)][]\n"
 "                                        </code>\n"
-"                                        : variation of the balance of all "
-"receivable accounts over\n"
+"                                        : variation of the balance of all receivable accounts over\n"
 "                                        the period."
 msgstr ""
 "<code>\n"
@@ -56,37 +52,33 @@ msgstr ""
 "                                            data_account_type_receivable')"
 ".id)][]\n"
 "                                        </code>\n"
-"                                        : Veränderung des Saldos aller "
-"Forderungskonten über\n"
-"                                        den Zeitraum."
+"                                        : sprememba salda vseh kontov "
+"terjatev v\n"
+"                                        obdobju."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>\n"
-"                                            balp[][('tax_line_id.tag_ids', "
-"'=', ref('l10n_be.tax_tag_56').id)]\n"
+"                                            balp[][('tax_line_id.tag_ids', '=', ref('l10n_be.tax_tag_56').id)]\n"
 "                                        </code>\n"
-"                                        : balance of move lines related to "
-"tax grid 56."
+"                                        : balance of move lines related to tax grid 56."
 msgstr ""
 "<code>\n"
 "                                            balp[][('tax_line_id.tag_ids', "
 "'=', ref('l10n_be.tax_tag_56').id)]\n"
 "                                        </code>\n"
-"                                        : Saldo der Buchungszeilen, die dem "
-"Steuerraster 56 zugeordnet sind."
+"                                        : saldo postavk knjiženja, povezanih "
+"z davčno mrežo 56."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>\n"
-"                                            debp[55%][('journal_id.code', "
-"'=',\n"
+"                                            debp[55%][('journal_id.code', '=',\n"
 "                                            'BNK1')]\n"
 "                                        </code>\n"
-"                                        : sum of all debits on accounts 55 "
-"and journal BNK1 during\n"
+"                                        : sum of all debits on accounts 55 and journal BNK1 during\n"
 "                                        the period."
 msgstr ""
 "<code>\n"
@@ -94,9 +86,9 @@ msgstr ""
 "'=',\n"
 "                                            'BNK1')]\n"
 "                                        </code>\n"
-"                                        : Summe aller Sollbuchungen auf den "
-"Konten 55 und im Journal BNK1 während\n"
-"                                        des Zeitraums."
+"                                        : vsota vseh bremenitev na kontih 55 "
+"in dnevniku BNK1 v\n"
+"                                        obdobju."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -104,33 +96,30 @@ msgid ""
 "<code>AccountingNone</code> : a null value that behaves as 0 in\n"
 "                                        arithmetic operations."
 msgstr ""
-"<code>AccountingNone</code> : ein Nullwert, der sich in\n"
-"                                        arithmetischen Operationen wie 0 "
-"verhält."
+"<code>AccountingNone</code> : ničelna vrednost, ki se obnaša kot 0 pri\n"
+"                                        aritmetičnih operacijah."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
-"<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>pbal</code>, "
-"<code>nbal</code>, <code>fld</code> : balance, debit, credit,\n"
+"<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>pbal</code>, <code>nbal</code>, <code>fld</code> : balance, debit, credit,\n"
 "                                        positive balance, negative balance,\n"
 "                                        other numerical field."
 msgstr ""
 "<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>pbal</code>, "
-"<code>nbal</code>, <code>fld</code> : Saldo, Soll, Haben,\n"
-"                                        positiver Saldo, negativer Saldo,\n"
-"                                        anderes numerisches Feld."
+"<code>nbal</code>, <code>fld</code> : saldo, breme, dobro,\n"
+"                                        pozitiven saldo, negativen saldo,\n"
+"                                        drugo številčno polje."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>bal[70]</code> : variation of the balance of account 70 over\n"
-"                                        the period (it is the same as "
-"<code>balp[70]</code>."
+"                                        the period (it is the same as <code>balp[70]</code>."
 msgstr ""
-"<code>bal[70]</code> : Veränderung des Saldos des Kontos 70 über\n"
-"                                        den Zeitraum (entspricht <code>"
-"balp[70]</code>)."
+"<code>bal[70]</code> : sprememba salda konta 70 v\n"
+"                                        obdobju (enako kot <code>balp[70]</"
+"code>."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -138,28 +127,25 @@ msgid ""
 "<code>bale[1%]</code> : balance of accounts starting with 1 at\n"
 "                                        end of period."
 msgstr ""
-"<code>bale[1%]</code> : Saldo der Konten, die mit 1 beginnen, am\n"
-"                                        Ende des Zeitraums."
+"<code>bale[1%]</code> : saldo kontov, ki se začnejo z 1, ob\n"
+"                                        koncu obdobja."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid "<code>bali[70,60]</code> : initial balance of accounts 70 and 60."
-msgstr "<code>bali[70,60]</code> : Anfangssaldo der Konten 70 und 60."
+msgstr "<code>bali[70,60]</code> : začetni saldo kontov 70 in 60."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
-"<code>balu[]</code> : (<code>u</code> for unallocated) is a special "
-"expression\n"
-"                                        that shows the unallocated profit/"
-"loss of previous fiscal\n"
+"<code>balu[]</code> : (<code>u</code> for unallocated) is a special expression\n"
+"                                        that shows the unallocated profit/loss of previous fiscal\n"
 "                                        years."
 msgstr ""
-"<code>balu[]</code> : (<code>u</code> für nicht zugewiesen) ist ein "
-"besonderer Ausdruck,\n"
-"                                        der den nicht zugewiesenen Gewinn/"
-"Verlust früherer\n"
-"                                        Geschäftsjahre anzeigt."
+"<code>balu[]</code> : (<code>u</code> za nerazporejeno) je poseben izraz,\n"
+"                                        ki prikazuje nerazporejen dobiček/"
+"izgubo preteklih poslovnih\n"
+"                                        let."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -167,19 +153,17 @@ msgid ""
 "<code>crdp[40%]</code> : sum of all credits on accounts starting\n"
 "                                        with 40 during the period."
 msgstr ""
-"<code>crdp[40%]</code> : Summe aller Habenbuchungen auf Konten, die\n"
-"                                        mit 40 beginnen, während des "
-"Zeitraums."
+"<code>crdp[40%]</code> : vsota vseh dobrov na kontih, ki se začnejo\n"
+"                                        z 40, v obdobju."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
-"<code>date_from</code>, <code>date_to</code> : beginning and end date of "
-"the\n"
+"<code>date_from</code>, <code>date_to</code> : beginning and end date of the\n"
 "                                        period."
 msgstr ""
-"<code>date_from</code>, <code>date_to</code> : Anfangs- und Enddatum des\n"
-"                                        Zeitraums."
+"<code>date_from</code>, <code>date_to</code> : začetni in končni datum\n"
+"                                        obdobja."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -187,45 +171,43 @@ msgid ""
 "<code>datetime</code>, <code>datetime</code>, <code>dateutil</code> : the "
 "python modules."
 msgstr ""
-"<code>datetime</code>, <code>datetime</code>, <code>dateutil</code> : die "
-"Python-Module."
+"<code>datetime</code>, <code>datetime</code>, <code>dateutil</code> : moduli "
+"Python."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
-"<code>p</code>, <code>i</code>, <code>e</code> : respectively variation over "
-"the period,\n"
+"<code>p</code>, <code>i</code>, <code>e</code> : respectively variation over the period,\n"
 "                                        initial balance, ending balance"
 msgstr ""
-"<code>p</code>, <code>i</code>, <code>e</code> : jeweils Veränderung über "
-"den Zeitraum,\n"
-"                                        Anfangssaldo, Endsaldo"
+"<code>p</code>, <code>i</code>, <code>e</code> : oziroma sprememba v "
+"obdobju,\n"
+"                                        začetni saldo, končni saldo"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>pbale[55%]</code> : sum of all ending balances of accounts\n"
-"                                        starting with 55 whose ending "
-"balance is positive."
+"                                        starting with 55 whose ending balance is positive."
 msgstr ""
-"<code>pbale[55%]</code> : Summe aller Endsalden der Konten,\n"
-"                                        die mit 55 beginnen und deren "
-"Endsaldo positiv ist."
+"<code>pbale[55%]</code> : vsota vseh končnih saldov kontov,\n"
+"                                        ki se začnejo z 55 in katerih končni "
+"saldo je pozitiven."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>sum</code>, <code>min</code>,\n"
 "                                        <code>max</code>, <code>len</code>,\n"
-"                                        <code>avg</code> : behave as "
-"expected, very\n"
+"                                        <code>avg</code> : behave as expected, very\n"
 "                                        similar to the python builtins."
 msgstr ""
 "<code>sum</code>, <code>min</code>,\n"
 "                                        <code>max</code>, <code>len</code>,\n"
-"                                        <code>avg</code> : verhalten sich "
-"wie erwartet, sehr\n"
-"                                        ähnlich zu den Python-Built-ins."
+"                                        <code>avg</code> : obnašajo se "
+"pričakovano, zelo\n"
+"                                        podobno vgrajenim funkcijam v "
+"Pythonu."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.report_mis_report_instance
@@ -235,35 +217,33 @@ msgstr "<span>-</span>"
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance_period__source_aml_model_id
 msgid ""
-"A 'move line like' model, ie having at least debit, credit, date, account_id "
-"and company_id fields."
+"A 'move line like' model, ie having at least debit, credit, date, account_id"
+" and company_id fields."
 msgstr ""
-"Ein Modell vom Typ „Buchungszeile“, das mindestens die Felder debit, credit, "
-"date, account_id und company_id besitzt."
+"Model, podoben postavkam knjiženja, tj. ima vsaj polja debit, credit, date, "
+"account_id in company_id."
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report__move_lines_source
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__source_aml_model_id
 msgid ""
-"A 'move line like' model, ie having at least debit, credit, date, account_id "
-"and company_id fields. This model is the data source for column Actuals."
+"A 'move line like' model, ie having at least debit, credit, date, account_id"
+" and company_id fields. This model is the data source for column Actuals."
 msgstr ""
-"Ein Modell vom Typ „Buchungszeile“, das mindestens die Felder debit, credit, "
-"date, account_id und company_id besitzt. Dieses Modell ist die Datenquelle "
-"für die Spalte „Istwerte“."
+"Model, podoben postavkam knjiženja, tj. ima vsaj polja debit, credit, date, "
+"account_id in company_id. Ta model je vir podatkov za stolpec Dejanski."
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 msgid "A date filter is mandatory for this source in column %s."
-msgstr "Für diese Quelle ist in Spalte %s ein Datumsfilter erforderlich."
+msgstr "Datumski filter je obvezen za ta vir v stolpcu %s."
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance_period__analytic_domain
 msgid "A domain to additionally filter move lines considered in this column."
 msgstr ""
-"Eine Domain, um die in dieser Spalte berücksichtigten Buchungszeilen "
-"zusätzlich zu filtern."
+"Domena za dodatno filtriranje postavk knjiženja, upoštevanih v tem stolpcu."
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__analytic_domain
@@ -273,69 +253,68 @@ msgid ""
 "as budgets by account, make sure to use only fields that are available in "
 "all move line sources."
 msgstr ""
-"Eine Domain, um die in diesem Bericht berücksichtigten Buchungszeilen "
-"zusätzlich zu filtern. Achtung: Wenn Sie in verschiedenen Spalten "
-"unterschiedliche Buchungszeilenquellen verwenden, etwa Budgets nach Konto, "
-"achten Sie darauf, nur Felder zu verwenden, die in allen "
-"Buchungszeilenquellen verfügbar sind."
+"Domena za dodatno filtriranje postavk knjiženja, upoštevanih v tem poročilu. "
+"Pozor: pri uporabi različnih virov postavk v različnih stolpcih, npr. "
+"proračunov po kontih, uporabljajte le polja, ki so na voljo v vseh virih "
+"postavk."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__account_model
 msgid "Account Model"
-msgstr "Kontenmodell"
+msgstr "Model konta"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__accumulation_method
 msgid "Accumulation Method"
-msgstr "Kumulationsmethode"
+msgstr "Metoda akumulacije"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 msgid ""
-"Actual (alternative) models used in columns must have the same account model "
-"in the Account field and must be the same defined in the report template: %s"
+"Actual (alternative) models used in columns must have the same account model"
+" in the Account field and must be the same defined in the report template: "
+"%s"
 msgstr ""
-"Die in Spalten verwendeten (alternativen) Istwert-Modelle müssen dasselbe "
-"Kontenmodell im Feld „Konto“ haben und mit dem in der Berichtsvorlage "
-"definierten übereinstimmen: %s"
+"Modeli Dejanski (alternativni), uporabljeni v stolpcih, morajo imeti v polju "
+"Konto isti model konta in morajo biti enaki tistim, določenim v predlogi "
+"poročila: %s"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__source__actuals
 msgid "Actuals"
-msgstr "Istwerte"
+msgstr "Dejanski"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__source__actuals_alt
 msgid "Actuals (alternative)"
-msgstr "Istwerte (alternativ)"
+msgstr "Dejanski (alternativni)"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance_period__source
 msgid ""
 "Actuals: current data, from accounting and other queries.\n"
-"Actuals (alternative): current data from an alternative source (eg a "
-"database view providing look-alike account move lines).\n"
+"Actuals (alternative): current data from an alternative source (eg a database view providing look-alike account move lines).\n"
 "Sum columns: summation (+/-) of other columns.\n"
 "Compare to column: compare to other column.\n"
 msgstr ""
-"Istwerte: aktuelle Daten aus der Buchhaltung und anderen Abfragen.\n"
-"Istwerte (alternativ): aktuelle Daten aus einer alternativen Quelle (z. B. "
-"eine Datenbankansicht, die buchungszeilenähnliche Daten liefert).\n"
-"Summenspalten: Summierung (+/-) anderer Spalten.\n"
-"Mit Spalte vergleichen: Vergleich mit einer anderen Spalte.\n"
+"Dejanski: trenutni podatki iz računovodstva in drugih poizvedb.\n"
+"Dejanski (alternativni): trenutni podatki iz alternativnega vira (npr. "
+"pogled baze, ki zagotavlja postavke podobne kontnim postavkam).\n"
+"Stolpci vsote: seštevanje (+/-) drugih stolpcev.\n"
+"Primerjaj s stolpcem: primerjaj z drugim stolpcem.\n"
 
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_prorata_read_group_mixin
 msgid "Adapt model with date_from/date_to for pro-rata temporis read_group"
-msgstr "Modell mit date_from/date_to für zeitanteiliges read_group anpassen"
+msgstr "Prilagodi model z date_from/date_to za read_group pro-rata temporis"
 
 #. module: mis_builder
 #: model:ir.actions.act_window,name:mis_builder.mis_report_instance_add_to_dashboard_action
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_add_to_dashboard_form_view
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
 msgid "Add to dashboard"
-msgstr "Zum Dashboard hinzufügen"
+msgstr "Dodaj na nadzorno ploščo"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -343,111 +322,111 @@ msgid ""
 "Additionally following variables are available\n"
 "                                    in the evaluation context:"
 msgstr ""
-"Zusätzlich stehen im Auswertungskontext folgende Variablen\n"
-"                                    zur Verfügung:"
+"Dodatno so v kontekstu vrednotenja na voljo\n"
+"                                    naslednje spremenljivke:"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__aggregate
 msgid "Aggregate"
-msgstr "Aggregation"
+msgstr "Agregat"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance__target_move__all
 msgid "All Entries"
-msgstr "Alle Buchungen"
+msgstr "Vsi vnosi"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__all_kpi_ids
 msgid "All Kpi"
-msgstr "Alle Kennzahlen"
+msgstr "Vsi KPI"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance__target_move__posted
 msgid "All Posted Entries"
-msgstr "Alle gebuchten Buchungen"
+msgstr "Vsi vknjiženi vnosi"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__allowed_cmpcol_ids
 msgid "Allowed Cmpcol"
-msgstr "Zulässige Vergleichsspalte"
+msgstr "Dovoljeni primerjalni stolpci"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__company_ids
 msgid "Allowed companies"
-msgstr "Zulässige Unternehmen"
+msgstr "Dovoljene družbe"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__company_id
 msgid "Allowed company"
-msgstr "Zulässiges Unternehmen"
+msgstr "Dovoljena družba"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_kpi_data__amount
 msgid "Amount"
-msgstr "Betrag"
+msgstr "Znesek"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_kpi__style_expression
 msgid ""
-"An expression that returns a style depending on the KPI value. Such style is "
-"applied on top of the row style."
+"An expression that returns a style depending on the KPI value. Such style is"
+" applied on top of the row style."
 msgstr ""
-"Ein Ausdruck, der je nach Kennzahlenwert einen Stil zurückgibt. Dieser Stil "
-"wird zusätzlich zum Zeilenstil angewendet."
+"Izraz, ki glede na vrednost KPI vrne slog. Tak slog se uporabi nad slogom "
+"vrstice."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__analytic_domain
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__analytic_domain
 msgid "Analytic Domain"
-msgstr "Kostenstellen-Domain"
+msgstr "Analitična domena"
 
 #. module: mis_builder
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/components/mis_report_widget.esm.js:0
 #: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
 msgid "Annotate"
-msgstr "Anmerken"
+msgstr "Dodaj opombo"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__annotation_context
 msgid "Annotation Context"
-msgstr "Anmerkungskontext"
+msgstr "Kontekst opombe"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid "Auto expand"
-msgstr "Automatisch ausklappen"
+msgstr "Samodejno razširi"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__avg
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__avg
 msgid "Average"
-msgstr "Durchschnitt"
+msgstr "Povprečna"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__background_color
 msgid "Background Color"
-msgstr "Hintergrundfarbe"
+msgstr "Barva ozadja"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__background_color_inherit
 msgid "Background Color Inherit"
-msgstr "Hintergrundfarbe geerbt"
+msgstr "Podeduj barvo ozadja"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_style__background_color
 msgid "Background color in valid RGB code (from #000000 to #FFFFFF)"
-msgstr "Hintergrundfarbe als gültiger RGB-Code (von #000000 bis #FFFFFF)"
+msgstr "Barva ozadja v veljavni RGB kodi (od #000000 do #FFFFFF)"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__date
 msgid "Base date"
-msgstr "Basisdatum"
+msgstr "Osnovni datum"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_weight__bold
 msgid "Bold"
-msgstr "Fett"
+msgstr "Krepko"
 
 #. module: mis_builder
 #. odoo-javascript
@@ -455,99 +434,98 @@ msgstr "Fett"
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_add_to_dashboard_form_view
 #: model_terms:ir.ui.view,arch_db:mis_builder.wizard_mis_report_instance_view_form
 msgid "Cancel"
-msgstr "Abbrechen"
+msgstr "Preklic"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__multi_company
-msgid "Check if you wish to specify several companies to be searched for data."
-msgstr ""
-"Aktivieren Sie dies, wenn Sie mehrere Unternehmen angeben möchten, in denen "
-"nach Daten gesucht wird."
+msgid ""
+"Check if you wish to specify several companies to be searched for data."
+msgstr "Označite, če želite določiti več družb, v katerih se iščejo podatki."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_style_view_form
 msgid "Color"
-msgstr "Farbe"
+msgstr "Barva"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__color_inherit
 msgid "Color Inherit"
-msgstr "Farbe geerbt"
+msgstr "Podeduj barvo"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum__period_to_sum_id
 msgid "Column"
-msgstr "Spalte"
+msgstr "Stolpec"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 msgid "Column %s cannot be compared to itrec."
-msgstr "Spalte %s kann nicht mit sich selbst verglichen werden."
+msgstr "Stolpca %s ni mogoče primerjati z itrec."
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 msgid "Column %s with move lines source must have from/to dates."
-msgstr "Spalte %s mit Buchungszeilenquelle muss ein Von-/Bis-Datum haben."
+msgstr "Stolpec %s z virom postavk mora imeti datuma od/do."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
 msgid "Columns"
-msgstr "Spalten"
+msgstr "Stolpci"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/kpimatrix.py:0
 msgid "Columns %(descr)s and %(base_descr)s are not comparable"
-msgstr "Die Spalten %(descr)s und %(base_descr)s sind nicht vergleichbar"
+msgstr "Stolpca %(descr)s in %(base_descr)s nista primerljiva"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 msgid "Columns to compare must belong to the same report in %s"
-msgstr "Die zu vergleichenden Spalten müssen in %s zum selben Bericht gehören"
+msgstr "Stolpci za primerjavo morajo pripadati istemu poročilu v %s"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__source_sumcol_ids
 msgid "Columns to sum"
-msgstr "Zu summierende Spalten"
+msgstr "Stolpci za seštevanje"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__query_company_ids
 msgid "Companies for which data will be searched."
-msgstr "Unternehmen, für die Daten gesucht werden."
+msgstr "Družbe, za katere se bodo iskali podatki."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__company_field_id
 msgid "Company Field"
-msgstr "Unternehmensfeld"
+msgstr "Polje družbe"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__source_cmpcol_to_id
 msgid "Compare"
-msgstr "Vergleichen"
+msgstr "Primerjaj"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__source__cmpcol
 msgid "Compare columns"
-msgstr "Spalten vergleichen"
+msgstr "Primerjaj stolpce"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__compare_method
 msgid "Comparison Method"
-msgstr "Vergleichsmethode"
+msgstr "Metoda primerjave"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__comparison_mode
 msgid "Comparison Mode"
-msgstr "Vergleichsmodus"
+msgstr "Način primerjave"
 
 #. module: mis_builder
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/annotation_dialog/annotation_dialog.xml:0
 msgid "Confirm"
-msgstr "Bestätigen"
+msgstr "Potrdi"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__create_uid
@@ -563,7 +541,7 @@ msgstr "Bestätigen"
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subkpi__create_uid
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subreport__create_uid
 msgid "Created by"
-msgstr "Erstellt von"
+msgstr "Ustvaril"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__create_date
@@ -579,17 +557,17 @@ msgstr "Erstellt von"
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subkpi__create_date
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subreport__create_date
 msgid "Created on"
-msgstr "Erstellt am"
+msgstr "Ustvarjeno"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__currency_id
 msgid "Currency"
-msgstr "Währung"
+msgstr "Valuta"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__dashboard_id
 msgid "Dashboard"
-msgstr "Dashboard"
+msgstr "Nadzorna plošča"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_prorata_read_group_mixin__date
@@ -599,44 +577,44 @@ msgstr "Datum"
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__date_field
 msgid "Date Field"
-msgstr "Datumsfeld"
+msgstr "Datumsko polje"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_prorata_read_group_mixin__date_from
 msgid "Date From"
-msgstr "Datum von"
+msgstr "Datum od"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__date_range_id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__date_range_id
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__date_range
 msgid "Date Range"
-msgstr "Datumsbereich"
+msgstr "Obdobje"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__date_range_type_id
 msgid "Date Range Type"
-msgstr "Datumsbereichstyp"
+msgstr "Tip obdobja"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_prorata_read_group_mixin__date_to
 msgid "Date To"
-msgstr "Datum bis"
+msgstr "Datum do"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_period_view_form
 msgid "Dates"
-msgstr "Daten"
+msgstr "Datumi"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__d
 msgid "Day"
-msgstr "Tag"
+msgstr "Dan"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_style__description
 msgid "Describe specific values that are not inherited"
-msgstr "Beschreiben Sie spezifische Werte, die nicht vererbt werden"
+msgstr "Opišite specifične vrednosti, ki se ne podedujejo"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__description
@@ -645,39 +623,35 @@ msgstr "Beschreiben Sie spezifische Werte, die nicht vererbt werden"
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__description
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subkpi__description
 msgid "Description"
-msgstr "Beschreibung"
+msgstr "Opis"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_kpi__accumulation_method
 msgid ""
-"Determines how values of this kpi spanning over a time period are "
-"transformed to match the reporting period. Sum: values of shorter period are "
-"added, values of longest or partially overlapping periods are adjusted pro-"
-"rata temporis.\n"
-"Average: values of included period are averaged with a pro-rata temporis "
-"weight."
+"Determines how values of this kpi spanning over a time period are transformed to match the reporting period. Sum: values of shorter period are added, values of longest or partially overlapping periods are adjusted pro-rata temporis.\n"
+"Average: values of included period are averaged with a pro-rata temporis weight."
 msgstr ""
-"Legt fest, wie die über einen Zeitraum reichenden Werte dieser Kennzahl an "
-"den Berichtszeitraum angepasst werden. Summe: Werte kürzerer Zeiträume "
-"werden addiert, Werte längerer oder teilweise überlappender Zeiträume werden "
-"zeitanteilig angepasst.\n"
-"Durchschnitt: Werte des einbezogenen Zeitraums werden mit einer "
-"zeitanteiligen Gewichtung gemittelt."
+"Določa, kako se vrednosti tega KPI, ki segajo čez časovno obdobje, "
+"preračunajo, da se ujemajo z obdobjem poročanja. Seštevek: vrednosti krajših "
+"obdobij se seštevajo, vrednosti daljših ali delno prekrivajočih obdobij se "
+"prilagodijo pro-rata temporis.\n"
+"Povprečje: vrednosti vključenega obdobja se povprečijo z utežjo pro-rata "
+"temporis."
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__diff
 msgid "Difference"
-msgstr "Differenz"
+msgstr "Razlika"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__no_auto_expand_accounts
 msgid "Disable account details expansion"
-msgstr "Aufklappen der Kontodetails deaktivieren"
+msgstr "Onemogoči razširjanje podrobnosti konta"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__display_columns_description
 msgid "Display Columns Description"
-msgstr "Spaltenbeschreibung anzeigen"
+msgstr "Prikaži opis stolpcev"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__display_name
@@ -693,77 +667,74 @@ msgstr "Spaltenbeschreibung anzeigen"
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subkpi__display_name
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subreport__display_name
 msgid "Display Name"
-msgstr "Anzeigename"
+msgstr "Prikazani naziv"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__auto_expand_accounts
 msgid "Display details by account"
-msgstr "Details nach Konto anzeigen"
+msgstr "Prikaži podrobnosti po kontu"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__display_columns_description
 msgid "Display the date range details in the column headers."
-msgstr "Die Details des Datumsbereichs in den Spaltenüberschriften anzeigen."
+msgstr "V glavah stolpcev prikaži podrobnosti časovnega razpona."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__divider_inherit
 msgid "Divider Inherit"
-msgstr "Teiler geerbt"
+msgstr "Podeduj ločilo"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__domain
 msgid "Domain"
-msgstr "Domain"
+msgstr "Domena"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__dp_inherit
 msgid "Dp Inherit"
-msgstr "Nachkommastellen geerbt"
+msgstr "Podeduj decimalna mesta"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_prorata_read_group_mixin__date
 msgid ""
 "Dummy field that adapts searches on date to searches on date_from/date_to."
 msgstr ""
-"Hilfsfeld, das Suchen nach Datum in Suchen nach date_from/date_to umwandelt."
+"Navidezno polje, ki prilagodi iskanja po date na iskanja po date_from/"
+"date_to."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__duration
 msgid "Duration"
-msgstr "Dauer"
+msgstr "Trajanje"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__query_company_ids
 msgid "Effective companies"
-msgstr "Effektive Unternehmen"
+msgstr "Učinkovite družbe"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid "Enter expression here, for example balp[70%]. See also help tab."
-msgstr ""
-"Geben Sie hier den Ausdruck ein, zum Beispiel balp[70%]. Siehe auch den "
-"Hilfe-Reiter."
+msgstr "Vnesite izraz tukaj, na primer balp[70%]. Glejte tudi zavihek pomoči."
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/aep.py:0
 msgid ""
-"Error while querying move line source \"%(model_name)s\". This is likely due "
-"to a filter or expression referencing a field that does not exist in the "
-"model.\n"
+"Error while querying move line source \"%(model_name)s\". This is likely due to a filter or expression referencing a field that does not exist in the model.\n"
 "\n"
 "The technical error message is: %(exception)s. "
 msgstr ""
-"Fehler beim Abfragen der Buchungszeilenquelle \"%(model_name)s\". Dies liegt "
-"wahrscheinlich an einem Filter oder Ausdruck, der ein Feld referenziert, das "
-"im Modell nicht existiert.\n"
+"Napaka pri poizvedbi vira postavk \"%(model_name)s\". To je verjetno "
+"posledica filtra ali izraza, ki se sklicuje na polje, ki v modelu ne "
+"obstaja.\n"
 "\n"
-"Die technische Fehlermeldung lautet: %(exception)s. "
+"Tehnično sporočilo napake je: %(exception)s. "
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid "Examples:"
-msgstr "Beispiele:"
+msgstr "Primeri:"
 
 #. module: mis_builder
 #. odoo-javascript
@@ -772,38 +743,36 @@ msgstr "Beispiele:"
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_list
 #: model_terms:ir.ui.view,arch_db:mis_builder.wizard_mis_report_instance_view_form
 msgid "Export"
-msgstr "Exportieren"
+msgstr "Izvozi"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__expression
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi_expression__name
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subkpi__expression_ids
 msgid "Expression"
-msgstr "Ausdruck"
+msgstr "Izraz"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__expression_ids
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid "Expressions"
-msgstr "Ausdrücke"
+msgstr "Izrazi"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid "Expressions can be any valid python expressions."
-msgstr "Ausdrücke können beliebige gültige Python-Ausdrücke sein."
+msgstr "Izrazi so lahko kateri koli veljavni Python izrazi."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "Expressions can involve other KPI, sub KPI and\n"
-"                                    query results by name (eg <code>kpi1 + "
-"kpi2</code>,\n"
-"                                    <code>kpi2.subkpi1</code>, "
-"<code>query1.field1</code>)."
+"                                    query results by name (eg <code>kpi1 + kpi2</code>,\n"
+"                                    <code>kpi2.subkpi1</code>, <code>query1.field1</code>)."
 msgstr ""
-"Ausdrücke können andere Kennzahlen, Unterkennzahlen und\n"
-"                                    Abfrageergebnisse über ihren Namen "
-"einbeziehen (z. B. <code>kpi1 + kpi2</code>,\n"
+"Izrazi lahko vključujejo druge KPI, pod-KPI in\n"
+"                                    rezultate poizvedb po imenu (npr. <code>"
+"kpi1 + kpi2</code>,\n"
 "                                    <code>kpi2.subkpi1</code>, <code>"
 "query1.field1</code>)."
 
@@ -816,17 +785,17 @@ msgstr "Faktor"
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_style_view_form
 msgid "Factor inherit"
-msgstr "Faktor geerbt"
+msgstr "Podeduj faktor"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance_period__normalize_factor
 msgid "Factor to use to normalize the period (used in comparison"
-msgstr "Faktor zur Normierung des Zeitraums (im Vergleich verwendet)"
+msgstr "Faktor za normalizacijo obdobja (uporablja se pri primerjavi"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__field_names
 msgid "Fetched fields name"
-msgstr "Name der abgerufenen Felder"
+msgstr "Imena zajetih polj"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_query__company_field_id
@@ -834,112 +803,112 @@ msgid ""
 "Field that defines company on related model.When set, it will be "
 "automatically be added in search domain of query."
 msgstr ""
-"Feld, das das Unternehmen im verknüpften Modell definiert. Wenn gesetzt, "
-"wird es automatisch zur Such-Domain der Abfrage hinzugefügt."
+"Polje, ki na povezanem modelu določa družbo. Ko je nastavljeno, se samodejno "
+"doda v iskalno domeno poizvedbe."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__field_ids
 msgid "Fields to fetch"
-msgstr "Abzurufende Felder"
+msgstr "Polja za zajem"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__widget_search_view_id
 msgid "Filter box search view"
-msgstr "Suchansicht für das Filterfeld"
+msgstr "Iskalni pogled polja za filtre"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_period_view_form
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
 msgid "Filters"
-msgstr "Filter"
+msgstr "Filtri"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__mode__fix
 msgid "Fixed dates"
-msgstr "Feste Daten"
+msgstr "Fiksni datumi"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_style_view_form
 msgid "Font"
-msgstr "Schriftart"
+msgstr "Pisava"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__font_size
 msgid "Font Size"
-msgstr "Schriftgröße"
+msgstr "Velikost pisave"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__font_size_inherit
 msgid "Font Size Inherit"
-msgstr "Schriftgröße geerbt"
+msgstr "Podeduj velikost pisave"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__font_style
 msgid "Font Style"
-msgstr "Schriftstil"
+msgstr "Slog pisave"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__font_style_inherit
 msgid "Font Style Inherit"
-msgstr "Schriftstil geerbt"
+msgstr "Podeduj slog pisave"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__font_weight
 msgid "Font Weight"
-msgstr "Schriftstärke"
+msgstr "Debelina pisave"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__font_weight_inherit
 msgid "Font Weight Inherit"
-msgstr "Schriftstärke geerbt"
+msgstr "Podeduj debelino pisave"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance_period__is_ytd
 msgid "Forces the start date to Jan 1st of the relevant year"
-msgstr "Setzt das Startdatum zwingend auf den 1. Januar des betreffenden Jahres"
+msgstr "Prisili začetni datum na 1. januar ustreznega leta"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_kpi_data__date_from
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__date_from
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__manual_date_from
 msgid "From"
-msgstr "Von"
+msgstr "Od"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__date_from
 msgid "From (computed)"
-msgstr "Von (berechnet)"
+msgstr "Od (izračunano)"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/report/mis_report_instance_xlsx.py:0
 msgid "Generated on %(gen_date)s at %(gen_time)s"
-msgstr "Erstellt am %(gen_date)s um %(gen_time)s"
+msgstr "Ustvarjeno %(gen_date)s ob %(gen_time)s"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid "Help (for KPI expressions)"
-msgstr "Hilfe (für Kennzahlenausdrücke)"
+msgstr "Pomoč (za izraze KPI)"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__hide_always
 msgid "Hide Always"
-msgstr "Immer ausblenden"
+msgstr "Vedno skrij"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__hide_always_inherit
 msgid "Hide Always Inherit"
-msgstr "Immer ausblenden geerbt"
+msgstr "Podeduj 'vedno skrij'"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__hide_empty
 msgid "Hide Empty"
-msgstr "Leere ausblenden"
+msgstr "Skrij prazne"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__hide_empty_inherit
 msgid "Hide Empty Inherit"
-msgstr "Leere ausblenden geerbt"
+msgstr "Podeduj 'skrij prazne'"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__id
@@ -962,46 +931,44 @@ msgstr "ID"
 #: code:addons/mis_builder/models/aep.py:0
 msgid ""
 "If currency_id is not provided, all companies must have the same currency."
-msgstr ""
-"Wenn currency_id nicht angegeben ist, müssen alle Unternehmen dieselbe "
-"Währung haben."
+msgstr "Če currency_id ni podan, morajo vse družbe imeti isto valuto."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_style_view_form
 msgid "Indent"
-msgstr "Einrückung"
+msgstr "Zamik"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__indent_level
 msgid "Indent Level"
-msgstr "Einrückungsebene"
+msgstr "Raven zamika"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__indent_level_inherit
 msgid "Indent Level Inherit"
-msgstr "Einrückungsebene geerbt"
+msgstr "Podeduj raven zamika"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_style.py:0
 msgid "Indent level must be greater than or equal to 0"
-msgstr "Die Einrückungsebene muss größer oder gleich 0 sein"
+msgstr "Raven zamika mora biti večja ali enaka 0"
 
 #. module: mis_builder
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/annotation_dialog/annotation_dialog.xml:0
 msgid "Insert note here"
-msgstr "Notiz hier einfügen"
+msgstr "Vnesite opombo tukaj"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_style__italic
 msgid "Italic"
-msgstr "Kursiv"
+msgstr "Kurzivno"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_kpi_data__kpi_expression_id
 msgid "KPI"
-msgstr "Kennzahl"
+msgstr "KPI"
 
 #. module: mis_builder
 #. odoo-python
@@ -1012,17 +979,15 @@ msgid ""
 "This can be fixed by either:\n"
 "\t- Changing the KPI value to a tuple of length %(length)s\n"
 "or\n"
-"\t- Changing the KPI to `multi` mode and giving an explicit value for each "
-"sub-KPI."
+"\t- Changing the KPI to `multi` mode and giving an explicit value for each sub-KPI."
 msgstr ""
-"Die Kennzahl \"%(kpi)s\" hat den Typ %(type)s, obwohl ein Tupel erwartet "
-"wurde.\n"
+"KPI \"%(kpi)s\" ima tip %(type)s, pričakovana pa je n-torka.\n"
 "\n"
-"Dies kann auf eine der folgenden Arten behoben werden:\n"
-"\t- Ändern des Kennzahlenwerts in ein Tupel der Länge %(length)s\n"
-"oder\n"
-"\t- Umstellen der Kennzahl auf den Modus `multi` und Angabe eines expliziten "
-"Werts für jede Unterkennzahl."
+"To lahko popravite tako, da:\n"
+"\t- spremenite vrednost KPI v n-torko dolžine %(length)s\n"
+"ali\n"
+"\t- spremenite KPI v način `multi` in podate izrecno vrednost za vsak pod-"
+"KPI."
 
 #. module: mis_builder
 #. odoo-python
@@ -1031,52 +996,52 @@ msgid ""
 "KPI \"%(kpi)s\" is valued as a tuple of length %(length)s while a tuple of "
 "length%(expected_length)s is expected."
 msgstr ""
-"Die Kennzahl \"%(kpi)s\" ist als Tupel der Länge %(length)s bewertet, obwohl "
-"ein Tupel der Länge %(expected_length)s erwartet wird."
+"KPI \"%(kpi)s\" je vrednoten kot n-torka dolžine %(length)s, pričakovana pa "
+"je n-torka dolžine%(expected_length)s."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_kpi_data__seq1
 msgid "KPI Sequence"
-msgstr "Kennzahlen-Reihenfolge"
+msgstr "Zaporedje KPI"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
 msgid "KPI name (%s) must be a valid python identifier"
-msgstr "Der Kennzahlenname (%s) muss ein gültiger Python-Bezeichner sein"
+msgstr "Ime KPI (%s) mora biti veljaven Python identifikator"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__kpi_ids
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_form
 msgid "KPI's"
-msgstr "Kennzahlen"
+msgstr "KPI-ji"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report__all_kpi_ids
 msgid "KPIs of this report and subreports."
-msgstr "Kennzahlen dieses Berichts und der Unterberichte."
+msgstr "KPI-ji tega poročila in pod-poročil."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__kpi_id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi_expression__kpi_id
 msgid "Kpi"
-msgstr "Kennzahl"
+msgstr "KPI"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__name
 msgid "Label"
-msgstr "Bezeichnung"
+msgstr "Oznaka"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__landscape_pdf
 msgid "Landscape PDF"
-msgstr "Quer-PDF"
+msgstr "Ležeči PDF"
 
 #. module: mis_builder
 #: model:ir.actions.act_window,name:mis_builder.last_mis_report_instance_view_action
 #: model:ir.ui.menu,name:mis_builder.last_wizard_mis_report_instance_view_menu
 msgid "Last Reports Generated"
-msgstr "Zuletzt erstellte Berichte"
+msgstr "Zadnja ustvarjena poročila"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__write_uid
@@ -1092,7 +1057,7 @@ msgstr "Zuletzt erstellte Berichte"
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subkpi__write_uid
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subreport__write_uid
 msgid "Last Updated by"
-msgstr "Zuletzt aktualisiert von"
+msgstr "Zadnji posodobil"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__write_date
@@ -1108,12 +1073,12 @@ msgstr "Zuletzt aktualisiert von"
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subkpi__write_date
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subreport__write_date
 msgid "Last Updated on"
-msgstr "Zuletzt aktualisiert am"
+msgstr "Zadnjič posodobljeno"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
 msgid "Layout"
-msgstr "Layout"
+msgstr "Postavitev"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__divider__1e6
@@ -1123,181 +1088,181 @@ msgstr "M"
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_report_mis_builder_mis_report_instance_xlsx
 msgid "MIS Builder XLSX report"
-msgstr "MIS-Builder-XLSX-Bericht"
+msgstr "Poročilo MIS Builder XLSX"
 
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_mis_kpi_data
 msgid "MIS Kpi Data Abtract class"
-msgstr "Abstrakte Klasse für MIS-Kennzahlendaten"
+msgstr "Abstraktni razred podatkov MIS KPI"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_form
 msgid "MIS Report"
-msgstr "MIS-Bericht"
+msgstr "MIS poročilo"
 
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_mis_report_subreport
 msgid "MIS Report - Sub Reports Relation"
-msgstr "MIS-Bericht – Beziehung zu Unterberichten"
+msgstr "MIS poročilo - povezava pod-poročil"
 
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_add_mis_report_instance_dashboard_wizard
 msgid "MIS Report Add to Dashboard Wizard"
-msgstr "MIS-Bericht: Assistent zum Hinzufügen zum Dashboard"
+msgstr "Čarovnik za dodajanje MIS poročila na nadzorno ploščo"
 
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_mis_report_instance
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
 msgid "MIS Report Instance"
-msgstr "MIS-Berichtsinstanz"
+msgstr "Instanca MIS poročila"
 
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_mis_report_instance_period
 msgid "MIS Report Instance Period"
-msgstr "MIS-Berichtsinstanz-Zeitraum"
+msgstr "Obdobje instance MIS poročila"
 
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_mis_report_instance_period_sum
 msgid "MIS Report Instance Period Sum"
-msgstr "MIS-Berichtsinstanz-Zeitraumsumme"
+msgstr "Seštevek obdobij instance MIS poročila"
 
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_mis_report_kpi
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid "MIS Report KPI"
-msgstr "MIS-Bericht-Kennzahl"
+msgstr "MIS KPI poročilo"
 
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_mis_report_kpi_expression
 msgid "MIS Report KPI Expression"
-msgstr "MIS-Bericht-Kennzahlenausdruck"
+msgstr "Izraz KPI MIS poročila"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_result_view_form
 msgid "MIS Report Preview"
-msgstr "MIS-Bericht-Vorschau"
+msgstr "Predogled MIS poročila"
 
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_mis_report_query
 msgid "MIS Report Query"
-msgstr "MIS-Bericht-Abfrage"
+msgstr "Poizvedba MIS poročila"
 
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_mis_report_style
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_style_view_form
 msgid "MIS Report Style"
-msgstr "MIS-Bericht-Stil"
+msgstr "Slog MIS poročila"
 
 #. module: mis_builder
 #: model:ir.actions.act_window,name:mis_builder.mis_report_style_view_action
 #: model:ir.ui.menu,name:mis_builder.mis_report_style_view_menu
 msgid "MIS Report Styles"
-msgstr "MIS-Bericht-Stile"
+msgstr "Slogi MIS poročila"
 
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_mis_report_subkpi
 msgid "MIS Report Sub-KPI"
-msgstr "MIS-Bericht-Unterkennzahl"
+msgstr "Pod-KPI MIS poročila"
 
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_mis_report
 msgid "MIS Report Template"
-msgstr "MIS-Bericht-Vorlage"
+msgstr "Predloga MIS poročila"
 
 #. module: mis_builder
 #: model:ir.actions.act_window,name:mis_builder.mis_report_view_action
 #: model:ir.ui.menu,name:mis_builder.mis_report_view_menu
 msgid "MIS Report Templates"
-msgstr "MIS-Bericht-Vorlagen"
+msgstr "Predloge MIS poročila"
 
 #. module: mis_builder
 #: model:res.groups,name:mis_builder.group_edit_annotation
 msgid "MIS Report: add annotations"
-msgstr "MIS-Bericht: Anmerkungen hinzufügen"
+msgstr "MIS poročilo: dodaj opombe"
 
 #. module: mis_builder
 #: model:res.groups,name:mis_builder.group_read_annotation
 msgid "MIS Report: view annotations"
-msgstr "MIS-Bericht: Anmerkungen anzeigen"
+msgstr "MIS poročilo: ogled opomb"
 
 #. module: mis_builder
 #: model:ir.ui.menu,name:mis_builder.mis_report_conf_menu
 #: model:ir.ui.menu,name:mis_builder.mis_report_finance_menu
 msgid "MIS Reporting"
-msgstr "MIS-Berichtswesen"
+msgstr "MIS poročanje"
 
 #. module: mis_builder
 #: model:ir.actions.act_window,name:mis_builder.mis_report_instance_view_action
 #: model:ir.ui.menu,name:mis_builder.mis_report_instance_view_menu
 msgid "MIS Reports"
-msgstr "MIS-Berichte"
+msgstr "MIS poročila"
 
 #. module: mis_builder
 #: model:ir.actions.report,name:mis_builder.qweb_pdf_export
 msgid "MIS report instance QWEB PDF report"
-msgstr "MIS-Berichtsinstanz QWEB-PDF-Bericht"
+msgstr "QWEB PDF poročilo instance MIS poročila"
 
 #. module: mis_builder
 #: model:ir.actions.report,name:mis_builder.xls_export
 msgid "MIS report instance XLS report"
-msgstr "MIS-Berichtsinstanz XLS-Bericht"
+msgstr "XLS poročilo instance MIS poročila"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__max
 msgid "Max"
-msgstr "Max."
+msgstr "Maks"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__min
 msgid "Min"
-msgstr "Min."
+msgstr "Min"
 
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_mis_report_instance_annotation
 msgid "Mis Report Instance Annotation"
-msgstr "MIS-Berichtsinstanz-Anmerkung"
+msgstr "Opomba instance MIS poročila"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__mode
 msgid "Mode"
-msgstr "Modus"
+msgstr "Način"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__source_aml_model_name
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__model_id
 msgid "Model"
-msgstr "Modell"
+msgstr "Model"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__m
 msgid "Month"
-msgstr "Monat"
+msgstr "Mesec"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__move_lines_source
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__source_aml_model_id
 msgid "Move Lines Source"
-msgstr "Buchungszeilenquelle"
+msgstr "Vir postavk"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__source_aml_model_id
 msgid "Move lines source"
-msgstr "Buchungszeilenquelle"
+msgstr "Vir postavk"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__source_aml_model_name
 msgid "Move lines source model name"
-msgstr "Modellname der Buchungszeilenquelle"
+msgstr "Ime modela vira postavk"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__multi
 msgid "Multi"
-msgstr "Mehrfach"
+msgstr "Multi"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__multi_company
 msgid "Multiple companies"
-msgstr "Mehrere Unternehmen"
+msgstr "Več družb"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__name
@@ -1311,133 +1276,133 @@ msgstr "Mehrere Unternehmen"
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_period_view_form
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
 msgid "Name"
-msgstr "Name"
+msgstr "Naziv"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__mode__none
 msgid "No date filter"
-msgstr "Kein Datumsfilter"
+msgstr "Brez datumske omejitve"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 msgid "No date filter is allowed for this source in column %s."
-msgstr "Für diese Quelle ist in Spalte %s kein Datumsfilter zulässig."
+msgstr "Za ta vir v stolpcu %s datumski filter ni dovoljen."
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__none
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__none
 msgid "None"
-msgstr "Keine"
+msgstr "Brez"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_style__normal
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_weight__nornal
 msgid "Normal"
-msgstr "Normal"
+msgstr "Običajno"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__note
 msgid "Note"
-msgstr "Notiz"
+msgstr "Opomba"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_style_view_form
 msgid "Number"
-msgstr "Zahl"
+msgstr "Številka"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance_period__duration
 msgid "Number of periods"
-msgstr "Anzahl der Zeiträume"
+msgstr "Število obdobij"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__num
 msgid "Numeric"
-msgstr "Numerisch"
+msgstr "Numerično"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__offset
 msgid "Offset"
-msgstr "Versatz"
+msgstr "Odmik"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance_period__offset
 msgid "Offset from current period"
-msgstr "Versatz zum aktuellen Zeitraum"
+msgstr "Odmik od trenutnega obdobja"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__wide_display_by_default
 msgid "Open report in wide mode by default"
-msgstr "Bericht standardmäßig im Breitmodus öffnen"
+msgstr "Privzeto odpri poročilo v širokem načinu"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum__period_id
 msgid "Parent column"
-msgstr "Übergeordnete Spalte"
+msgstr "Nadrejeni stolpec"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__pct
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__pct
 msgid "Percentage"
-msgstr "Prozentsatz"
+msgstr "Odstotek"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__period_id
 msgid "Period"
-msgstr "Zeitraum"
+msgstr "Obdobje"
 
 #. module: mis_builder
 #: model:ir.model.constraint,message:mis_builder.constraint_mis_report_instance_period_name_unique
 msgid "Period name should be unique by report"
-msgstr "Der Zeitraumname sollte je Bericht eindeutig sein"
+msgstr "Ime obdobja mora biti unikatno po poročilu"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__type
 msgid "Period type"
-msgstr "Zeitraumtyp"
+msgstr "Vrsta obdobja"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__period_ids
 msgid "Periods"
-msgstr "Zeiträume"
+msgstr "Obdobja"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__pivot_date
 msgid "Pivot Date"
-msgstr "Stichtag"
+msgstr "Pivot datum"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 msgid "Please provide both columns to compare in %s."
-msgstr "Bitte geben Sie in %s beide zu vergleichenden Spalten an."
+msgstr "Prosimo, podajte oba stolpca za primerjavo v %s."
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 msgid ""
-"Please select a report template and/or save the report before adding columns."
+"Please select a report template and/or save the report before adding "
+"columns."
 msgstr ""
-"Bitte wählen Sie eine Berichtsvorlage aus und/oder speichern Sie den "
-"Bericht, bevor Sie Spalten hinzufügen."
+"Pred dodajanjem stolpcev izberite predlogo poročila in/ali shranite poročilo."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__prefix
 msgid "Prefix"
-msgstr "Präfix"
+msgstr "Predpona"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__prefix_inherit
 msgid "Prefix Inherit"
-msgstr "Präfix geerbt"
+msgstr "Podeduj predpono"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_list
 #: model_terms:ir.ui.view,arch_db:mis_builder.wizard_mis_report_instance_view_form
 msgid "Preview"
-msgstr "Vorschau"
+msgstr "Predogled"
 
 #. module: mis_builder
 #. odoo-javascript
@@ -1446,36 +1411,36 @@ msgstr "Vorschau"
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_list
 #: model_terms:ir.ui.view,arch_db:mis_builder.wizard_mis_report_instance_view_form
 msgid "Print"
-msgstr "Drucken"
+msgstr "Natisni"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__query_ids
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_form
 msgid "Queries"
-msgstr "Abfragen"
+msgstr "Poizvedbe"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
 msgid "Query name (%s) must be valid python identifier"
-msgstr "Der Abfragename (%s) muss ein gültiger Python-Bezeichner sein"
+msgstr "Ime poizvedbe (%s) mora biti veljaven Python identifikator"
 
 #. module: mis_builder
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
 msgid "Refresh"
-msgstr "Aktualisieren"
+msgstr "Osveži"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__mode__relative
 msgid "Relative to report base date"
-msgstr "Relativ zum Basisdatum des Berichts"
+msgstr "Relativno glede na osnovni datum poročila"
 
 #. module: mis_builder
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/annotation_dialog/annotation_dialog.xml:0
 msgid "Remove"
-msgstr "Entfernen"
+msgstr "Odstrani"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__report_id
@@ -1485,49 +1450,48 @@ msgstr "Entfernen"
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subkpi__report_id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subreport__report_id
 msgid "Report"
-msgstr "Bericht"
+msgstr "Poročilo"
 
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_ir_actions_report
 msgid "Report Action"
-msgstr "Berichtsaktion"
+msgstr "Akcija za poročilo"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__report_instance_id
 msgid "Report Instance"
-msgstr "Berichtsinstanz"
+msgstr "Instanca poročila"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__date
 msgid "Report base date (leave empty to use current date)"
-msgstr ""
-"Basisdatum des Berichts (leer lassen, um das aktuelle Datum zu verwenden)"
+msgstr "Osnovni datum poročila (pustite prazno za uporabo trenutnega datuma)"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__dp
 msgid "Rounding"
-msgstr "Rundung"
+msgstr "Zaokroževanje"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_style_view_form
 msgid "Rounding inherit"
-msgstr "Rundung geerbt"
+msgstr "Podeduj zaokroževanje"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
 #: model_terms:ir.ui.view,arch_db:mis_builder.wizard_mis_report_instance_view_form
 msgid "Save"
-msgstr "Speichern"
+msgstr "Shrani"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__widget_search_view_id
 msgid "Search view to customize the filter box in the report widget."
-msgstr "Suchansicht zur Anpassung des Filterfelds im Bericht-Widget."
+msgstr "Iskalni pogled za prilagoditev polja filtra v gradniku poročila."
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__company_ids
 msgid "Select companies for which data will be searched."
-msgstr "Wählen Sie die Unternehmen aus, für die Daten gesucht werden."
+msgstr "Izberite družbe, za katere se bodo iskali podatki."
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__currency_id
@@ -1535,8 +1499,7 @@ msgid ""
 "Select target currency for the report. Required if companies have different "
 "currencies."
 msgstr ""
-"Wählen Sie die Zielwährung für den Bericht. Erforderlich, wenn die "
-"Unternehmen unterschiedliche Währungen haben."
+"Izberite ciljno valuto za poročilo. Obvezno, če imajo družbe različne valute."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__sequence
@@ -1545,13 +1508,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi_expression__sequence
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subkpi__sequence
 msgid "Sequence"
-msgstr "Reihenfolge"
+msgstr "Zaporedje"
 
 #. module: mis_builder
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
 msgid "Settings"
-msgstr "Einstellungen"
+msgstr "Nastavitve"
 
 #. module: mis_builder
 #: model:ir.model.constraint,message:mis_builder.constraint_mis_report_subreport_subreport_unique
@@ -1559,54 +1522,54 @@ msgid ""
 "Should not include the same report more than once as sub report of a given "
 "report"
 msgstr ""
-"Derselbe Bericht sollte nicht mehrfach als Unterbericht eines bestimmten "
-"Berichts enthalten sein"
+"Isto poročilo ne sme biti vključeno več kot enkrat kot pod-poročilo danega "
+"poročila"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__widget_show_pivot_date
 msgid "Show Pivot Date"
-msgstr "Stichtag anzeigen"
+msgstr "Prikaži pivot datum"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__widget_show_filters
 msgid "Show filters box"
-msgstr "Filterfeld anzeigen"
+msgstr "Prikaži polje filtrov"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__widget_show_settings_button
 msgid "Show settings button"
-msgstr "Schaltfläche „Einstellungen“ anzeigen"
+msgstr "Prikaži gumb nastavitev"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__widget_show_pivot_date
 msgid "Show the Pivot Date in the report widget filter bar."
-msgstr "Den Stichtag in der Filterleiste des Bericht-Widgets anzeigen."
+msgstr "V vrstici filtrov gradnika poročila prikaži pivot datum."
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__widget_show_filters
 msgid "Show the filter bar in the report widget."
-msgstr "Die Filterleiste im Bericht-Widget anzeigen."
+msgstr "V gradniku poročila prikaži vrstico filtrov."
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__widget_show_settings_button
 msgid "Show the settings button in the report widget."
-msgstr "Die Schaltfläche „Einstellungen“ im Bericht-Widget anzeigen."
+msgstr "V gradniku poročila prikaži gumb nastavitev."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum__sign
 msgid "Sign"
-msgstr "Vorzeichen"
+msgstr "Podpisovanje"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__source
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_period_view_form
 msgid "Source"
-msgstr "Quelle"
+msgstr "Vir"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__str
 msgid "String"
-msgstr "Zeichenkette"
+msgstr "Niz"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__style_id
@@ -1617,112 +1580,112 @@ msgstr "Stil"
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__style_expression
 msgid "Style Expression"
-msgstr "Stilausdruck"
+msgstr "Izraz sloga"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__auto_expand_accounts_style_id
 msgid "Style for account detail rows"
-msgstr "Stil für Kontodetailzeilen"
+msgstr "Slog za vrstice podrobnosti konta"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__name
 msgid "Style name"
-msgstr "Stilname"
+msgstr "Ime sloga"
 
 #. module: mis_builder
 #: model:ir.model.constraint,message:mis_builder.constraint_mis_report_style_style_name_uniq
 msgid "Style name should be unique"
-msgstr "Der Stilname sollte eindeutig sein"
+msgstr "Ime sloga mora biti unikatno"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__subkpi_ids
 msgid "Sub KPI"
-msgstr "Unterkennzahl"
+msgstr "Pod-KPI"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__subkpi_ids
 msgid "Sub KPI Filter"
-msgstr "Unterkennzahlen-Filter"
+msgstr "Filter pod-KPI"
 
 #. module: mis_builder
 #: model:ir.model.constraint,message:mis_builder.constraint_mis_report_kpi_expression_subkpi_kpi_unique
 msgid "Sub KPI must be used once and only once for each KPI"
-msgstr "Jede Unterkennzahl muss für jede Kennzahl genau einmal verwendet werden"
+msgstr "Pod-KPI mora biti uporabljen enkrat in samo enkrat za vsak KPI"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_form
 msgid "Sub KPI's"
-msgstr "Unterkennzahlen"
+msgstr "Pod-KPI-ji"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_form
 msgid "Sub Reports"
-msgstr "Unterberichte"
+msgstr "Pod-poročila"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__subreport_ids
 msgid "Sub reports"
-msgstr "Unterberichte"
+msgstr "Pod-poročila"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_kpi_data__seq2
 msgid "Sub-KPI Sequence"
-msgstr "Unterkennzahlen-Reihenfolge"
+msgstr "Zaporedje pod-KPI"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
 msgid "Sub-KPI name (%s) must be a valid python identifier"
-msgstr "Der Unterkennzahlenname (%s) muss ein gültiger Python-Bezeichner sein"
+msgstr "Ime pod-KPI (%s) mora biti veljaven Python identifikator"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__subkpi_id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi_expression__subkpi_id
 msgid "Subkpi"
-msgstr "Unterkennzahl"
+msgstr "Subkpi"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subreport__subreport_id
 msgid "Subreport"
-msgstr "Unterbericht"
+msgstr "Pod-poročilo"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_subreport.py:0
 msgid "Subreport loop detected"
-msgstr "Schleife bei Unterberichten erkannt"
+msgstr "Zaznana zanka pod-poročil"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_subreport.py:0
 msgid "Subreport name (%s) must be a valid python identifier"
-msgstr "Der Unterberichtsname (%s) muss ein gültiger Python-Bezeichner sein"
+msgstr "Ime pod-poročila (%s) mora biti veljaven Python identifikator"
 
 #. module: mis_builder
 #: model:ir.model.constraint,message:mis_builder.constraint_mis_report_subreport_name_unique
 msgid "Subreport name should be unique by report"
-msgstr "Der Unterberichtsname sollte je Bericht eindeutig sein"
+msgstr "Ime pod-poročila mora biti unikatno po poročilu"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__suffix
 msgid "Suffix"
-msgstr "Suffix"
+msgstr "Pripona"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__suffix_inherit
 msgid "Suffix Inherit"
-msgstr "Suffix geerbt"
+msgstr "Podeduj pripono"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__sum
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__sum
 msgid "Sum"
-msgstr "Summe"
+msgstr "Vsota"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__source_sumcol_accdet
 msgid "Sum account details"
-msgstr "Kontodetails summieren"
+msgstr "Seštej podrobnosti kontov"
 
 #. module: mis_builder
 #. odoo-python
@@ -1731,53 +1694,51 @@ msgid ""
 "Sum cannot be computed in column %s because the columns to sum have no "
 "common subkpis"
 msgstr ""
-"Die Summe kann in Spalte %s nicht berechnet werden, da die zu summierenden "
-"Spalten keine gemeinsamen Unterkennzahlen haben"
+"Seštevka ni mogoče izračunati v stolpcu %s, ker stolpci za seštevanje nimajo "
+"skupnih pod-KPI-jev"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__source__sumcol
 msgid "Sum columns"
-msgstr "Summenspalten"
+msgstr "Seštej stolpce"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__target_move
 msgid "Target Moves"
-msgstr "Zielbuchungen"
+msgstr "Ciljni premiki"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_list
 msgid "Template"
-msgstr "Vorlage"
+msgstr "Predloga"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__temporary
 msgid "Temporary"
-msgstr "Temporär"
+msgstr "Začasno"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__color
 msgid "Text color"
-msgstr "Textfarbe"
+msgstr "Barva besedila"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_style__color
 msgid "Text color in valid RGB code (from #000000 to #FFFFFF)"
-msgstr "Textfarbe als gültiger RGB-Code (von #000000 bis #FFFFFF)"
+msgstr "Barva besedila v veljavni RGB kodi (od #000000 do #FFFFFF)"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "The <b>account selector</b> is a like expression on the\n"
-"                                        account code (eg <code>70%</code>, "
-"etc), or a domain over accounts\n"
-"                                        (eg <code>[('code', 'like', '60%')]</"
-"code>)."
+"                                        account code (eg <code>70%</code>, etc), or a domain over accounts\n"
+"                                        (eg <code>[('code', 'like', '60%')]</code>)."
 msgstr ""
-"Der <b>Kontoselektor</b> ist ein Like-Ausdruck auf den\n"
-"                                        Kontocode (z. B. <code>70%</code> "
-"usw.) oder eine Domain über Konten\n"
-"                                        (z. B. <code>[('code', 'like', '60%')"
+"<b>izbirnik kontov</b> je izraz tipa like na\n"
+"                                        šifro konta (npr. <code>70%</code> "
+"ipd.) ali domena nad konti\n"
+"                                        (npr. <code>[('code', 'like', '60%')"
 "]</code>)."
 
 #. module: mis_builder
@@ -1786,303 +1747,220 @@ msgid ""
 "The <b>journal items domain</b> is an Odoo domain filter on\n"
 "                                        journal items."
 msgstr ""
-"Die <b>Buchungszeilen-Domain</b> ist ein Odoo-Domain-Filter auf\n"
-"                                        Buchungszeilen."
+"Domena <b>postavk dnevnika</b> je Odoo domena za\n"
+"                                        postavke dnevnika."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "The following special elements are recognized in the expressions\n"
-"                                    to compute accounting data: <code>{bal|"
-"crd|deb|pbal|nbal|fld}{pieu}(.fieldname)[account\n"
+"                                    to compute accounting data: <code>{bal|crd|deb|pbal|nbal|fld}{pieu}(.fieldname)[account\n"
 "                                    selector][journal items domain]</code>."
 msgstr ""
-"Die folgenden Sonderelemente werden in den Ausdrücken\n"
-"                                    zur Berechnung von Buchhaltungsdaten "
-"erkannt: <code>{bal|crd|deb|pbal|nbal|fld}{pieu}(.fieldname)[account\n"
-"                                    selector][journal items domain]</code>."
+"V izrazih za izračun računovodskih podatkov so prepoznani\n"
+"                                    naslednji posebni elementi: <code>"
+"{bal|crd|deb|pbal|nbal|fld}{pieu}(.fieldname)\n"
+"                                    [izbirnik kontov][domena postavk "
+"dnevnika]</code>."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_kpi_data__date_to
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__date_to
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__manual_date_to
 msgid "To"
-msgstr "Bis"
+msgstr "Do"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__date_to
 msgid "To (computed)"
-msgstr "Bis (berechnet)"
+msgstr "Do (izračunano)"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_kpi_data.py:0
 msgid "Unexpected accumulation method %(method)s for %(name)s."
-msgstr "Unerwartete Kumulationsmethode %(method)s für %(name)s."
+msgstr "Nepričakovana metoda akumulacije %(method)s za %(name)s."
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
 msgid "Unexpected value %s for target_move."
-msgstr "Unerwarteter Wert %s für target_move."
+msgstr "Nepričakovana vrednost %s za target_move."
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/prorata_read_group_mixin.py:0
 msgid "Unsupported operator %s for searching on date"
-msgstr "Nicht unterstützter Operator %s für die Suche nach Datum"
+msgstr "Nepodprt operator %s za iskanje po datumu"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__user_can_edit_annotation
 msgid "User Can Edit Annotation"
-msgstr "Benutzer darf Anmerkung bearbeiten"
+msgstr "Uporabnik lahko ureja opombo"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__user_can_read_annotation
 msgid "User Can Read Annotation"
-msgstr "Benutzer darf Anmerkung lesen"
+msgstr "Uporabnik lahko bere opombo"
 
 #. module: mis_builder
 #: model:ir.actions.server,name:mis_builder.ir_cron_vacuum_temp_reports_ir_actions_server
 msgid "Vacuum temporary reports"
-msgstr "Temporäre Berichte bereinigen"
+msgstr "Počisti začasna poročila"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__valid
 msgid "Valid"
-msgstr "Gültig"
+msgstr "Velja"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__type
 msgid "Value type"
-msgstr "Werttyp"
+msgstr "Vrsta vrednosti"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_style_view_form
 msgid "Visibility"
-msgstr "Sichtbarkeit"
+msgstr "Vidljivost"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__w
 msgid "Week"
-msgstr "Woche"
+msgstr "Teden"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
 msgid "Widget"
-msgstr "Widget"
+msgstr "Pripomoček"
 
 #. module: mis_builder
 #: model:ir.model.constraint,message:mis_builder.constraint_mis_report_instance_period_duration
 msgid "Wrong duration, it must be positive!"
-msgstr "Ungültige Dauer, sie muss positiv sein!"
+msgstr "Napačno trajanje, mora biti pozitivno!"
 
 #. module: mis_builder
 #: model:ir.model.constraint,message:mis_builder.constraint_mis_report_instance_period_normalize_factor
 msgid "Wrong normalize factor, it must be positive!"
-msgstr "Ungültiger Normierungsfaktor, er muss positiv sein!"
+msgstr "Napačen faktor normalizacije, mora biti pozitiven!"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__y
 msgid "Year"
-msgstr "Jahr"
+msgstr "Leto"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__is_ytd
 msgid "Year to date"
-msgstr "Seit Jahresbeginn"
+msgstr "Od začetka leta"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 msgid "You cannot sum period %s with itself."
-msgstr "Sie können den Zeitraum %s nicht mit sich selbst summieren."
+msgstr "Obdobja %s ne morete sešteti s samim seboj."
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance_annotation.py:0
 msgid "You do not have the rights to edit annotations"
-msgstr "Sie haben keine Berechtigung, Anmerkungen zu bearbeiten"
+msgstr "Nimate pravic za urejanje opomb"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/aep.py:0
 msgid "`%(field)s` cannot have a field name in expression %(expr)s"
-msgstr "`%(field)s` darf im Ausdruck %(expr)s keinen Feldnamen haben"
+msgstr "`%(field)s` ne more imeti imena polja v izrazu %(expr)s"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/aep.py:0
 msgid "`fld` can only be used with mode `p` (variation) in expression %s"
-msgstr ""
-"`fld` kann im Ausdruck %s nur mit dem Modus `p` (Veränderung) verwendet "
-"werden"
+msgstr "`fld` je mogoče uporabiti samo z načinom `p` (sprememba) v izrazu %s"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/aep.py:0
 msgid "`fld` must have a field name in exression %s"
-msgstr "`fld` muss im Ausdruck %s einen Feldnamen haben"
+msgstr "`fld` mora imeti ime polja v izrazu %s"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 msgid "from %(date_from)s to %(date_to)s"
-msgstr "von %(date_from)s bis %(date_to)s"
+msgstr "od %(date_from)s do %(date_to)s"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__divider__1e3
 msgid "k"
-msgstr "Tsd."
+msgstr "k"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__large
 msgid "large"
-msgstr "groß"
+msgstr "velik"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__divider__1e-3
 msgid "m"
-msgstr "Mio."
+msgstr "m"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__medium
 msgid "medium"
-msgstr "mittel"
+msgstr "srednji"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_add_to_dashboard_form_view
 #: model_terms:ir.ui.view,arch_db:mis_builder.wizard_mis_report_instance_view_form
 msgid "or"
-msgstr "oder"
+msgstr "ali"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_style.py:0
 msgid "pp"
-msgstr "%-Pkt."
+msgstr "pp"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__small
 msgid "small"
-msgstr "klein"
+msgstr "mali"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__source_cmpcol_from_id
 msgid "versus"
-msgstr "gegenüber"
+msgstr "proti"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "when <code>fld</code> is used : a field name specifier\n"
-"                                        must be provided (e.g. "
-"<code>fldp.quantity</code>"
+"                                        must be provided (e.g. <code>fldp.quantity</code>"
 msgstr ""
-"wenn <code>fld</code> verwendet wird: muss ein Feldnamen-Spezifizierer\n"
-"                                        angegeben werden (z. B. <code>"
-"fldp.quantity</code>"
+"ko je uporabljen <code>fld</code> : navesti je treba določilo imena polja\n"
+"                                        (npr. <code>fldp.quantity</code>"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__x-large
 msgid "x-large"
-msgstr "sehr groß"
+msgstr "x-large"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__x-small
 msgid "x-small"
-msgstr "sehr klein"
+msgstr "x-small"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__xx-large
 msgid "xx-large"
-msgstr "extra groß"
+msgstr "xx-large"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__xx-small
 msgid "xx-small"
-msgstr "extra klein"
+msgstr "xx-small"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__divider__1e-6
 msgid "µ"
 msgstr "µ"
-
-#~ msgid ""
-#~ "<b>AccountingNone</b>: a null value that behaves as 0 in arithmetic "
-#~ "operations."
-#~ msgstr ""
-#~ "<b>BuchhaltungsNull</b>: Ein Null-Wert, der sich wie 0 in arithmetischen "
-#~ "Berechnungen verhält."
-
-#, fuzzy
-#~ msgid ""
-#~ "<b>bal, crd, deb, pbal, nbal</b>: balance, debit, credit, positive "
-#~ "balance, negative balance."
-#~ msgstr "<b>bal, crd, deb</b>: Saldo, Haben, Soll."
-
-#~ msgid ""
-#~ "<b>bal[70]</b>: variation of the balance of account 70 over the period "
-#~ "(it is the same as balp[70]."
-#~ msgstr ""
-#~ "<b>bal[70]</b>: Abwandlung des Saldo von Konto 70 über die Zeit (Dies "
-#~ "entspricht balp[70])."
-
-#~ msgid ""
-#~ "<b>bale[1%]</b>: balance of accounts starting with 1 at end of period."
-#~ msgstr ""
-#~ "<b>bale[1%]</b>: Saldo der Konten die mit 1 beginnen zum Ende der Periode."
-
-#~ msgid "<b>bali[70,60]</b>: initial balance of accounts 70 and 60."
-#~ msgstr "<b>bali[70,60]</b>: Eröffnungssaldo der Konten 70 und 60."
-
-#~ msgid ""
-#~ "<b>balp[('user_type_id', '=', "
-#~ "ref('account.data_account_type_receivable').id)][]</b>: variation of the "
-#~ "balance of all receivable accounts over the period."
-#~ msgstr ""
-#~ "<b>balp[('user_type_id', '=', "
-#~ "ref('account.data_account_type_receivable').id)][]</b>: Abwandlung des "
-#~ "Saldo aller Forderungskonten über die Zeit."
-
-#~ msgid ""
-#~ "<b>balp[][('tax_line_id.tag_ids', '=', ref('l10n_be.tax_tag_56').id)]</"
-#~ "b>: balance of move lines related to tax grid 56."
-#~ msgstr ""
-#~ "<b>balp[][('tax_line_id.tag_ids', '=', ref('l10n_be.tax_tag_56').id)]</"
-#~ "b>: Saldo der Buchungen mit Steuerschlüssel 56 ."
-
-#~ msgid ""
-#~ "<b>balu[]</b>: (u for unallocated) is a special expression that shows the "
-#~ "unallocated profit/loss of previous\n"
-#~ "                                           fiscal years."
-#~ msgstr ""
-#~ "<b>balu[]</b>: (u für nicht zugewiesen) ist ein spezieller Ausdruck, der "
-#~ "nicht zugewiesene Gewinne/Verluste der Vorjahre ausweist."
-
-#~ msgid ""
-#~ "<b>crdp[40%]</b>: sum of all credits on accounts starting with 40 during "
-#~ "the period."
-#~ msgstr ""
-#~ "<b>crdp[40%]</b>: Summe aller Haben auf Konten, die mit 40 beginnen, über "
-#~ "die Zeit."
-
-#~ msgid "<b>date_from, date_to</b>: beginning and end date of the period."
-#~ msgstr "<b>date_from, date_to</b>: Anfangs- und Enddatum der Periode."
-
-#~ msgid "<b>datetime, datetime, dateutil</b>: the python modules."
-#~ msgstr "<b>datetime, datetime, dateutil</b>: die Python-Methoden."
-
-#~ msgid ""
-#~ "<b>debp[55%][('journal_id.code', '=', 'BNK1')]</b>: sum of all debits on "
-#~ "accounts 55 and journal BNK1 during the period."
-#~ msgstr ""
-#~ "<b>debp[55%][('journal_id.code', '=', 'BNK1')]</b>: Die Summe aller Soll "
-#~ "der Konten 55 und Journal BNK1 über die Periode.."
-
-#, fuzzy
-#~ msgid ""
-#~ "<b>p, i, e</b>: respectively variation over the period, initial balance, "
-#~ "ending balance"
-#~ msgstr ""
-#~ "<b>p, i, e</b>: jeweilige Abwandlung über Zeit, Eröffnungssaldo, Endsaldo"
