@@ -1,6 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended", ":disableDependencyDashboard"],
+<<<<<<< before updating
   "baseBranchPatterns": ["19.0", "18.0", "17.0", "16.0"],
+=======
+  "baseBranchPatterns": ["19.0", "18.0", "17.0", "16.0", "15.0"],
+>>>>>>> after updating
   "enabledManagers": ["copier"]
 }
